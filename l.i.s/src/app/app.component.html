@@ -8,14 +8,7 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
-  :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+
 
   h1,
   h2,
@@ -303,15 +296,27 @@
 </style>
 
 <!-- Toolbar -->
-<div class="header" role="banner">
   <img
-    width="1440px"
-    alt="Angular Logo"
-    src="../assets/img/l.i.s_header_pc.png"
+    width="fit-content"
+    height="fit-content"
+    alt="l.i.S Logo"
+    src="../assets/img/l.i.s_header.png"
   />
-  
-</div>
+<!--画像をスライドさせる-->
 <app-image-carousel></app-image-carousel>
+<!--ブランドリンク-->
+<app-brand-components></app-brand-components>
+<!--ニュースリンク-->
+<app-news-component></app-news-component>
+
+ <!-- Footer -->
+ <footer>
+  <img src='../assets/img/l.i.s_footer_pc.svg'>
+  
+</footer>
+
+
+
 
 <div class="content" role="main">
 
@@ -442,11 +447,7 @@
     </a>
   </div>
 
-  <!-- Footer -->
-  <footer>
-      <img src='../assets/img/l.i.s_footer_pc.svg'>
-      
-  </footer>
+ 
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <title>Gray Clouds Background</title>

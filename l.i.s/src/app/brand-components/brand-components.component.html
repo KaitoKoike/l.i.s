@@ -1,0 +1,17 @@
+<p>brand-components works!</p>
+<div class="brand_link">
+    <div class="title"><img src="../../assets/img/lis_top/BRANDS.png"></div>
+    
+    <ngx-slick-carousel class="carousel" 
+        #slickModal="slick-carousel" 
+        [config]="slideConfig" 
+        >
+        <div ngxSlickItem *ngFor="let slide of slides; trackBy:_trackBy" class="slide">
+        <a href="{{slide.ref}}">
+            <img src="{{ slide.img }}" alt="brand logo">
+        </a>
+            
+        </div>
+    </ngx-slick-carousel>
+
+</div>

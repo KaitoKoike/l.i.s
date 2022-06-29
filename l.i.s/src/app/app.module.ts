@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
-import {ImageCarouselComponent} from './image-carousel/image-carousel.component'
+import {ImageCarouselComponent} from './image-carousel/image-carousel.component';
+import { BrandComponentsComponent } from './brand-components/brand-components.component';
+import { NewsComponentComponent } from './news-component/news-component.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImageCarouselComponent
+    ImageCarouselComponent,
+    BrandComponentsComponent,
+    NewsComponentComponent
   ],
   imports: [
     BrowserModule,
