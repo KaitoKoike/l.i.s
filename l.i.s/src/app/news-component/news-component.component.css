@@ -1,0 +1,41 @@
+/* the slides */
+.news_item {
+    margin: 0 ;
+}
+/* the parent */
+.news_list {
+    margin: 0 ;
+}
+
+
+.news_list .news_item {
+    object-fit:contain ;
+}
+
+.news_link {
+    margin-bottom: 200px;
+}
+
+.news_detail_link {
+    display: flex;
+    justify-content: right;
+    align-items:right ;
+    
+    text-decoration: none;
+    background-color: transparent;
+
+
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+
+    /* color-primary */
+
+    color: #231815;
+}

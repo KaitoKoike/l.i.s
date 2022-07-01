@@ -1,8 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { 
-    height: 100%; 
+    
 }
-body { margin:15vw; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+    width: 1000px;
+    padding-left:15vw;
+    padding-right: 15vw;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    }
+.mat-typography {
+    margin: 0 auto;
+}
 
 

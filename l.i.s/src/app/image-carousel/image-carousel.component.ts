@@ -26,6 +26,7 @@ export class ImageCarouselComponent implements OnInit {
     "autoplay":true,
     "dots":true,
     'adaptiveHeight':false,
+    'arrows':false
     
   };
 

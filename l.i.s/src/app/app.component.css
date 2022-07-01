@@ -1,17 +1,67 @@
-:host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    padding-right: 15vw;
-    padding-left: 15vw;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-.header img{
-    width: fit-content;
-    height: fit-content;
-    align-content: center;
-    
-    
+
+.lis_logo_header{
+    align-content: center;  
 }
+
+footer {
+  margin: 0;
+  margin-top: 40px;
+}
+
+footer nav ul  {
+  margin:0 ;
+  margin-top: 40px;
+  margin-bottom: 32px;
+  display:flex;
+  justify-content: center;
+  list-style:none;
+}
+
+footer nav ul li.navigation-items a, a[href]:hover {
+  color: currentColor;
+}
+
+footer nav ul li.navigation-items {
+  padding-left: 12px;
+  padding-right: 12px;
+  text-decoration: none;
+  background-color: transparent;
+  /* JP/Reg/14px */
+
+  font-family: 'YuMincho';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+  letter-spacing: 0.03em;
+
+  /* color-primary */
+
+  color: #231815;
+}
+footer .copy_right_text {
+  /* L.I.S co.,ltd. All rights reserved. */
+  margin: 0;
+  padding-bottom: 32px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  /* EN/Reg/16px */
+
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  letter-spacing: 0.08em;
+
+  /* color-primary */
+
+color: #231815;
+}
+

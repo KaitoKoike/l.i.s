@@ -220,18 +220,7 @@
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
 
-  footer {
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 20px;
-  }
-
-  footer a {
-    display: flex;
-    align-items: center;
-  }
-
+ 
   .github-star-badge {
     color: #24292e;
     display: flex;
@@ -293,36 +282,49 @@
       visibility: hidden;
     }
   }
+
+  .lis_logo_header img{
+    margin-top: 34px;
+    margin-bottom: 34.43px;
+  }
 </style>
 
 <!-- Toolbar -->
+<header class="lis_logo_header">
   <img
     width="fit-content"
     height="fit-content"
     alt="l.i.S Logo"
     src="../assets/img/l.i.s_header.png"
   />
+</header>
+<main>
 <!--画像をスライドさせる-->
-<app-image-carousel></app-image-carousel>
+<app-image-carousel class="image-carousel"></app-image-carousel>
 <!--ブランドリンク-->
-<app-brand-components></app-brand-components>
+<app-brand-components class="brand_link"></app-brand-components>
 <!--ニュースリンク-->
 <app-news-component></app-news-component>
 
+</main>
+
  <!-- Footer -->
  <footer>
-  <img src='../assets/img/l.i.s_footer_pc.svg'>
-  
+  <nav>
+    <ul>
+      <li class="navigation-items"><a href="">会社情報</a></li>
+      <li class="navigation-items"><a href="">問い合わせ</a></li>
+    </ul>
+  </nav>
+  <small class="copy_right_text">L.I.S co.,ltd. All rights reserved.</small>
+  <!-- <img src='../assets/img/l.i.s_footer_pc.svg'> -->
 </footer>
 
 
 
-
+<style>/* 
 <div class="content" role="main">
-
-  
-
-  <!-- Highlight Card -->
+    <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
     <svg id="rocket" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
@@ -455,6 +457,8 @@
   </svg>
 
 </div>
+/+</style>
+
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

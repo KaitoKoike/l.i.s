@@ -17,6 +17,7 @@ export class BrandComponentsComponent implements OnInit {
   slides = [
     {img: "../assets/img/brand_list/drumohr.png",ref:"https://www.google.com"},
     {img: "../assets/img/brand_list/guy_rover.png",ref:"https://www.google.com"},
+    {img: "",ref:""},
 
   ];
   slideConfig = {

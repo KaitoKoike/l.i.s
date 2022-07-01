@@ -1,7 +1,11 @@
-.slide img {
+.top_image_slide img {
     max-width: 100%;
     max-height: 100%;
     margin-left: auto;
     margin-right: auto;
     object-fit: cover;
+}
+.carousel{
+    margin-top: 80px;
+    margin-bottom: 80px;
 }

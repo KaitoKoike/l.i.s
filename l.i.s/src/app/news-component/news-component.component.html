@@ -1,17 +1,20 @@
-<p>news-component works!</p>
-<div class="brand_link">
+<div class="news_link">
     <div class="title"><img src="../../assets/img/lis_top/NEWS.png"></div>
     
     <ngx-slick-carousel class="carousel" 
         #slickModal="slick-carousel" 
         [config]="slideConfig" 
         >
-        <div ngxSlickItem *ngFor="let slide of slides; trackBy:_trackBy" class="slide">
-        <a href="{{slide.ref}}">
-            <img src="{{ slide.img }}" alt="brand logo">
-        </a>
-            
+        <div ngxSlickItem *ngFor="let slide of slides; trackBy:_trackBy" class="news_list">
+        <div class="news_item">
+            <a href="{{slide.ref}}">
+                <img src="{{ slide.img }}" alt="">
+            </a>
+            <p>{{slide.news_date}}</p>
+            <p>{{slide.text}}</p>
+        </div>
         </div>
     </ngx-slick-carousel>
+    <a href="aaa.com" class="news_detail_link"><u>View more</u></a>
 
 </div>
