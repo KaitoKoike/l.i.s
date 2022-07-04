@@ -1,0 +1,99 @@
+:host ::ng-deep formly-field > formly-group > formly-feld > .required_mark {
+    background-color: black;
+}
+
+
+.help_page {
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+.help_title  {
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 200%;
+    /* identical to box height, or 72px */
+
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #231815;
+    margin-bottom: 16px;
+
+}
+
+.help_detail {
+    /* JP/Reg/14px */
+    display:block;
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #231815;
+    margin-bottom: 100px;
+}
+
+form {
+    width: 100%;
+    /* JP/Reg/14px */
+
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+  
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #181818;
+
+}
+
+button {
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    /* color-white */
+
+    color: #FFFFFF;
+    background-color: #231815;
+    max-width: 320px;
+    width:320px;
+    max-height:48px;
+    height:48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-form-field {
+    width: 10px;    
+}
+

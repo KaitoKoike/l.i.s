@@ -13,7 +13,9 @@
 }
 
 .news_link {
-    margin-bottom: 200px;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-bottom: 200px;
 }
 
 .news_detail_link {

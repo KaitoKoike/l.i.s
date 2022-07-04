@@ -1,0 +1,72 @@
+.newslist {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.newslist_title {
+    /* EN/Reg/64pt */
+
+    font-family: 'Cormorant Garamond-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 150%;
+    /* identical to box height, or 96px */
+
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.08em;
+
+    /* color-primary */
+
+    color: #231815;
+}
+
+.newslist_contents {
+    width: 1040px;
+}
+mat-card{
+    max-width: 306px;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    margin-bottom: 64px;
+}
+
+mat-card img{
+    display: flex;
+    
+}
+
+mat-card-subtitle{
+    /* JP/Reg/14px */
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #231815;
+}
+
+mat-card-content{
+    /* JP/Reg/18px */
+
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+
+
+    /* color-primary */
+
+    color: #231815;
+}

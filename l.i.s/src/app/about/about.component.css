@@ -1,0 +1,52 @@
+.about_company {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'YuMincho';
+}
+
+.info_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 200%;
+    /* identical to box height, or 72px */
+
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.03em;
+    margin-bottom: 100px;
+}
+
+.companyInfo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 333px;
+    margin-left: 400px;
+}
+
+
+dt,dd {
+    margin: 0 0 24px 0;
+    padding: 0 0 0 0;
+    /* JP/Reg/14px */
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    /* color-primary */
+    color: #231815;
+}
+dt {
+    width: 15%;
+}
+
+dd {
+    width: 85%;
+}
+
