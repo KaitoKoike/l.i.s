@@ -222,6 +222,7 @@ export class HelpComponent {
     console.log(model);
     if (this.form.valid) {
       alert('お問い合わせいただき，ありがとうございました');
+      location.reload();
     }
   }
 
