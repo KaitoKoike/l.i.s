@@ -1,7 +1,21 @@
 import {Component} from '@angular/core';
-import {FormGroup} from '@angular/forms';
+import {AbstractControl, FormGroup, ValidationErrors} from '@angular/forms';
 import {FormlyFieldConfig} from '@ngx-formly/core';
 
+export function PostalCodeValidator(control: AbstractControl): ValidationErrors {
+  return !control.value ||/^[0-9]{7}$/.test(control.value) ? {} : { 'postal_code': true };
+}
+export function PostalCodeValitorMessage(error:any,field:FormlyFieldConfig){
+  return `"${field.formControl?.value}" は正しい郵便番号ではありません`;}
+
+
+  export function EmailValidator(control: AbstractControl): ValidationErrors {
+    return /.+@.+\..+/.test(control.value) ? {} : { 'email': true };
+  }
+  export function EmailValitorMessage(error:any,field:FormlyFieldConfig){
+    return `"${field.formControl?.value}" は正しい形式のメールアドレスではありません`;}
+
+    
 @Component({
   selector: 'app-help',
   templateUrl: './help.component.html',
@@ -29,12 +43,12 @@ export class HelpComponent {
         key:'kanji',
         type:'input',
         label:'氏名',
-        required:true,        
+        placeholder:'',
+        required:true,
         labelPosition:'floating',
         attributes:{
           style:"width:327px;height:38px"
         },
-        
       },      
     },
     {
@@ -44,7 +58,8 @@ export class HelpComponent {
       props:{
         key:'kana',
         label:'フリガナ',
-        required:true,        
+        required:true,
+        minLength:1,  
         labelPosition:'floating',
         attributes:{
           style:"width:327px;height:38px"
@@ -54,18 +69,22 @@ export class HelpComponent {
       },      
     },
     {
-      key:'postalcode',
+      key:'postal_code',
       wrappers:['help-form'],
       type:'input',
       props:{
-        key:'postalcode',
+        key:'postal_code',
         label:'郵便番号',
-        required:false,        
+        placeholder:'1234567',
+        maxLength:7,
         labelPosition:'floating',
         attributes:{
           style:"width:327px;height:38px"
-        },   
-      },      
+        },
+      },
+      validators:{
+        validation:['postal_code']
+      } 
     },
     {
       key:'pref',
@@ -159,7 +178,10 @@ export class HelpComponent {
         attributes:{
           style:'width:100%;height:38px'
         },
-      },      
+      },
+      validators:{
+        validation:['email']
+      }       
     },
     {
       key:'phonenumber',
@@ -196,8 +218,11 @@ export class HelpComponent {
 
   ];
 
-  onSubmit(model:any){
+  onSubmit(model:any) {
     console.log(model);
+    if (this.form.valid) {
+      alert('お問い合わせいただき，ありがとうございました');
+    }
   }
 
 }

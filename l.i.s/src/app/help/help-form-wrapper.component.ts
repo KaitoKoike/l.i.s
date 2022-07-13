@@ -24,6 +24,8 @@ import { FieldWrapper } from '@ngx-formly/core';
       </div>
       <small *ngIf="props.description" class="form-text text-muted">{{ props.description }}</small>
     </div>
+
+
     <div class="mb-3" [class.form-floating]="props['labelPosition'] === 'floating'" [class.has-error]="showError">
       <ng-container *ngIf="props['labelPosition'] !== 'floating'">
         <ng-container [ngTemplateOutlet]="fieldComponent"></ng-container>
@@ -34,7 +36,8 @@ import { FieldWrapper } from '@ngx-formly/core';
       </ng-container>
 
       <div *ngIf="showError" class="invalid-feedback" [style.display]="'block'">
-        <formly-validation-message [field]="field"></formly-validation-message>
+        <formly-validation-message [field]="field"
+        style="color: red;font-size:8px"></formly-validation-message>
       </div>
 
       

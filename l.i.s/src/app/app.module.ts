@@ -22,7 +22,7 @@ import { BrandComponentsComponent } from './brand-components/brand-components.co
 import { NewsComponentComponent } from './news-component/news-component.component';
 import { TopPageComponent } from './top-page/top-page.component';
 import { NewsComponent } from './news/news.component';
-import { HelpComponent } from './help/help.component';
+import { EmailValidator, EmailValitorMessage, HelpComponent, PostalCodeValidator, PostalCodeValitorMessage } from './help/help.component';
 import { NewsListComponent } from './news-list/news-list.component'
 import { AboutComponent } from './about/about.component'
 import { HelpFormWrapper} from './help/help-form-wrapper.component';
@@ -54,6 +54,15 @@ import { HelpFormWrapper} from './help/help-form-wrapper.component';
       wrappers:[
         {name:'help-form',component:HelpFormWrapper},
       ],
+      validators:[
+        {name:'postal_code',validation:PostalCodeValidator},
+        {name:'email',validation:EmailValidator},
+      ],
+      validationMessages:[
+        {name:'required',message:'必須項目です'},
+        {name:'postal_code',message:PostalCodeValitorMessage},
+        {name:'email',message:EmailValitorMessage}
+      ]
     }),
     FormlyBootstrapModule
   ],
