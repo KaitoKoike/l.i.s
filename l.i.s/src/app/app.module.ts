@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { MatTable, MatTableModule} from '@angular/material/table';
 import { DataSource } from '@angular/cdk/collections';
 import {MatCardModule} from '@angular/material/card';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import {BREAKPOINTS, DEFAULT_BREAKPOINTS, FlexLayoutModule} from '@angular/flex-layout';
 
 
 // 画像スライダー用モジュール
@@ -26,6 +26,7 @@ import { EmailValidator, EmailValitorMessage, HelpComponent, PostalCodeValidator
 import { NewsListComponent } from './news-list/news-list.component'
 import { AboutComponent } from './about/about.component'
 import { HelpFormWrapper} from './help/help-form-wrapper.component';
+import { CustomLayoutDirective, CustomBreakPointsProvider } from './custom-BREAKPOINTS';
 
 
 @NgModule({
@@ -40,7 +41,7 @@ import { HelpFormWrapper} from './help/help-form-wrapper.component';
     NewsListComponent,
     AboutComponent,
     HelpFormWrapper,
-    
+    CustomLayoutDirective,
   ],
   imports:[
     BrowserModule,
@@ -64,9 +65,12 @@ import { HelpFormWrapper} from './help/help-form-wrapper.component';
         {name:'email',message:EmailValitorMessage}
       ]
     }),
-    FormlyBootstrapModule
+    FormlyBootstrapModule,
+    FlexLayoutModule.withConfig({disableDefaultBps: true}),
   ],
-  providers: [],
+  providers: [
+    CustomBreakPointsProvider
+  ],
   bootstrap: [AppComponent]
 })
 
