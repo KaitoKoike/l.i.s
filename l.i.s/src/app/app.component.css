@@ -1,14 +1,23 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
 .lis_logo_header{
-    margin: 0 auto 80px auto;
+    margin: 0 ;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: left;
   }
   
   .lis_logo_header a {
-    margin-left: 16.67%;
+    margin-left:2% ;
+    max-width: 1000px;
   }
   .lis_logo_header a img{
     margin-top: 34px;
+    margin-bottom: 34.5px;
     width: fit-content;
   }
   

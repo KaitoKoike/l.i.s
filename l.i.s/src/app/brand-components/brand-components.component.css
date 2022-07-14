@@ -4,3 +4,15 @@
     margin: 0 auto;
     padding-bottom: 80px;
 }
+
+.brand_item {
+    margin: 0 ;
+    width: 33% ;
+}
+
+.brand_item .brand_logo {
+    max-width: 100%;
+    width: fit-content;
+    object-fit:contain ;
+    margin-bottom: 16px;
+}

@@ -1,20 +1,21 @@
-<div class="news_link">
+<div class="news_link" box-sizing="border-box">
     <div class="title"><img src="../../assets/img/lis_top/NEWS.png"></div>
-    
-    <ngx-slick-carousel class="carousel" 
-        #slickModal="slick-carousel" 
-        [config]="slideConfig" 
+        <div 
+        class="news_list" 
+        fxLayoutAlign="start start"
+        fxLayoutGap="40px"
+        fxLayout="row" 
+        fxLayout.xs="column"
+        box-sizing="border-box"
         >
-        <div ngxSlickItem *ngFor="let slide of slides; trackBy:_trackBy" class="news_list">
-        <div class="news_item">
-            <a href="{{slide.ref}}">
-                <img src="{{ slide.img }}" alt="">
-            </a>
-            <p>{{slide.news_date}}</p>
-            <p>{{slide.text}}</p>
+            <div *ngFor="let slide of slides;"  class="news_item">
+                <a href="{{slide.ref}}">
+                    <img src="{{ slide.img }}" alt="" class="news_image">
+                </a>
+                <p class="news_date">{{slide.news_date}}</p>
+                <p class="news_text">{{slide.text}}</p>
+            </div>
         </div>
-        </div>
-    </ngx-slick-carousel>
     <a routerLink="/newslist" class="news_detail_link"><u>View more</u></a>
 
 </div>

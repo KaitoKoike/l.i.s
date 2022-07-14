@@ -1,16 +1,15 @@
 <div class="brand_link">
     <div class="brand_title"><img src="../../assets/img/lis_top/BRANDS.png"></div>
-    
-    <ngx-slick-carousel class="carousel" 
-        #slickModal="slick-carousel" 
-        [config]="slideConfig" 
+        <div
+        class="brand_list" 
+        fxLayoutAlign="start start"
+        fxLayoutGap="40px"
+        fxLayout="row" 
+        fxLayout.xs="column"
+        box-sizing="border-box"
         >
-        <div ngxSlickItem *ngFor="let slide of slides; trackBy:_trackBy" class="brand_slide">
-        <a href="{{slide.ref}}">
-            <img src="{{ slide.img }}" alt="">
-        </a>
-            
+            <div *ngFor="let slide of slides;" class="brand_item">
+                <a href="{{slide.ref}}"><img src="{{ slide.img }}" alt="" class="brand_logo"></a>
+            </div>
         </div>
-    </ngx-slick-carousel>
-
 </div>

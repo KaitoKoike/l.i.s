@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 html { 
-    margin: 0;
+   display: flexbox;
     
 }
 
 body {
-    margin: 0;
+    margin: 0 24px 0 24px;
     font-family: Roboto, "Helvetica Neue", sans-serif,'Cormorant Garamond-Regular','YuMincho'; 
     }
 

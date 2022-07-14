@@ -1,13 +1,15 @@
-<ngx-slick-carousel class="carousel" 
-#slickModal="slick-carousel" 
-[config]="slideConfig" 
-(init)="slickInit($event)"
-(breakpoint)="breakpoint($event)"
-(afterChange)="afterChange($event)"
-(beforeChange)="beforeChange($event)"
->
-<div ngxSlickItem *ngFor="let slide of slides; trackBy:_trackBy" class="top_image_slide">
-<img src="{{ slide.img }}" alt="">
+<div >
+    <ngx-slick-carousel class="carousel" 
+        #slickModal="slick-carousel" 
+        [config]="slideConfig" 
+        (init)="slickInit($event)"
+        (breakpoint)="breakpoint($event)"
+        (afterChange)="afterChange($event)"
+        (beforeChange)="beforeChange($event)"
+        >
+        <div ngxSlickItem *ngFor="let slide of slides; trackBy:_trackBy" class="top_image_slide">
+            <img src="{{ slide.img }}" alt="">
+        </div>
+    </ngx-slick-carousel>
 </div>
-</ngx-slick-carousel>
 
