@@ -1,15 +1,17 @@
 <div class="brand_link">
-    <div class="brand_title"><img src="../../assets/img/lis_top/BRANDS.png"></div>
-        <div
+    <div class="brand_title">
+        BRANDS
+    </div>
+    <div
         class="brand_list" 
         fxLayoutAlign="start start"
-        fxLayoutGap="40px"
-        fxLayout="row" 
-        fxLayout.xs.mobile="column"
+        fxLayoutAlign.xs.mobile = 'space-between start'
+        fxLayoutGap="4%"
+        fxLayout="row"
         box-sizing="border-box"
-        >
-            <div *ngFor="let slide of slides;" class="brand_item">
-                <a href="{{slide.ref}}"><img src="{{ slide.img }}" alt="" class="brand_logo"></a>
-            </div>
+    >
+        <div *ngFor="let slide of slides;" class="brand_item">
+            <a href="{{slide.ref}}"><img src="{{ slide.img }}" alt="" class="brand_logo"></a>
         </div>
+    </div>
 </div>

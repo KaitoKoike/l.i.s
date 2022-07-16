@@ -1,13 +1,10 @@
 .brand_link{
-    margin-bottom: 80px;
     max-width: 1000px;
     margin: 0 auto;
-    padding-bottom: 80px;
 }
 
-.brand_item {
-    margin: 0 ;
-    width: 33% ;
+.brand_list {
+    margin-bottom: 80px;
 }
 
 .brand_item .brand_logo {
@@ -15,4 +12,46 @@
     width: fit-content;
     object-fit:contain ;
     margin-bottom: 16px;
+}
+
+.brand_title {
+    /* EN/Reg/32px */
+    font-family: 'Cormorant Garamond-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.08em;
+
+    /* color-primary */
+
+    color: #231815;
+}
+
+@media (max-width:768px) {
+    .brand_title {
+        /* EN/Reg/16px */
+
+    font-family: 'Cormorant Garamond-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    /* color-primary */
+
+    color: #231815;
+    }
+    .brand_list {
+        margin-bottom: 64px;
+    }
+
+    .brand_item .brand_logo {
+        margin-bottom: 0;
+    }
 }

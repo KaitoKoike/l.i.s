@@ -1,22 +1,44 @@
-<div class="news_link" box-sizing="border-box">
-    <div class="title"><img src="../../assets/img/lis_top/NEWS.png"></div>
-        <div 
+<div class="news_link" box-sizing="border-box" fxLayout="column">
+    <div class="title">
+        NEWS
+    </div>
+    <div 
         class="news_list" 
         fxLayoutAlign="start start"
-        fxLayoutGap="40px"
+        fxLayoutGap="4%"
         fxLayout="row" 
         fxLayout.xs.mobile="column"
         fxLayout.xs="column"
         box-sizing="border-box"
+    >
+        <div *ngFor="let slide of slides;"  
+                class="news_item"
+                fxLayout="column"
+                fxLayout.xs.mobile="row"
+                fxFlexFill.xs.mobile
+                fxFlex="33"
+                fxFlex.xs.mobile="auto"
+                box-sizing="border-box"
+                fxLayoutAlign="start start"
+
         >
-            <div *ngFor="let slide of slides;"  class="news_item">
-                <a href="{{slide.ref}}">
-                    <img src="{{ slide.img }}" alt="" class="news_image">
-                </a>
+            <a href="{{slide.ref}}"
+            fxFlex="34"
+            >
+                <img src="{{ slide.img }}" alt="" class="news_image">
+            </a>
+            
+            <div class="news_description"
+                fxFlex.xs.mobile="66"
+            >
                 <p class="news_date">{{slide.news_date}}</p>
                 <p class="news_text">{{slide.text}}</p>
-            </div>
+            </div>    
         </div>
-    <a routerLink="/newslist" class="news_detail_link"><u>View more</u></a>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="end start" fxLayoutAlign.xs.mobile="center center">
+        <a  routerLink="/newslist" class="news_detail_link">View more</a>
+    </div>
+    
 
 </div>
