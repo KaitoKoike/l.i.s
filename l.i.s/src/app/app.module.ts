@@ -6,6 +6,7 @@ import { MatTable, MatTableModule} from '@angular/material/table';
 import { DataSource } from '@angular/cdk/collections';
 import {MatCardModule} from '@angular/material/card';
 import {BREAKPOINTS, DEFAULT_BREAKPOINTS, FlexLayoutModule} from '@angular/flex-layout';
+import { GridModule } from '@angular/flex-layout';
 
 
 // 画像スライダー用モジュール
@@ -51,6 +52,7 @@ import { CustomLayoutDirective, CustomBreakPointsProvider } from './custom-BREAK
     MatCardModule,
     FlexLayoutModule,
     ReactiveFormsModule,
+    GridModule,
     FormlyModule.forRoot({
       wrappers:[
         {name:'help-form',component:HelpFormWrapper},

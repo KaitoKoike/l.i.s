@@ -16,7 +16,7 @@ const MOBILE_BREAKPOINTS = [{
   suffix: 'XsMobile',
   mediaQuery: 'screen and (max-width: 768px)',
   overlapping: false,
-  priority: 9999 // Needed if overriding the default print breakpoint
+  priority: 1 // Needed if overriding the default print breakpoint
 }];
 
 export const CustomBreakPointsProvider = { 
