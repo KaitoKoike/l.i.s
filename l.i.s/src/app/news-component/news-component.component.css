@@ -68,9 +68,12 @@
     padding-bottom: 200px;
 }
 
-.news_detail_link {
+.news_detail_navigation{
     margin-top: 32px;
-    
+}
+
+.news_detail_link {
+   
     text-decoration: none;
     background-color: transparent;
 
@@ -159,8 +162,11 @@
         order: 1;
         flex-grow: 0;
      }
+    .news_detail_navigation {
+        width: 100%;
+        margin-bottom: 64px;
+    }
     .news_detail_link {
-        margin-top: 0px;
         text-decoration: none;
         background-color: transparent;
         font-family: 'YuMincho';
@@ -183,7 +189,6 @@
     }
 
     .news_item {
-        margin-bottom: 32px;
         width: 100%;
     }
 }

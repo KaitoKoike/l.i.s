@@ -1,17 +1,27 @@
-<header >
-  <div class="lis_logo_header">
-    <a routerLink="/TopPage"><img alt="l.i.S Logo" src="../assets/img/l.i.s_header.png"/></a>
+<header
+  fxLayout='row'
+  fxLayoutAlign="center center"
+>
+  <div class="lis_logo_header"
+    fxLayout="row"
+    fxLayoutAlign="start center"
+    fxLayout.xs.mobile="column"
+    fxLayoutAlign.xs.mobile="center center"
+  >
+    <a routerLink="/TopPage"><img alt="l.i.S Logo" src="../assets/img/l.i.s_header.png" class="lis_logo"></a>
   </div>
     
 </header>
   <router-outlet></router-outlet>
 <footer>
     <nav>
-      <ul>
-        <li class="navigation-items"><a routerLink="/about">会社情報</a></li>
+      <ul
+        fxLayout.xs.mobile="column"
+        >
+        <li class="navigation-items" ><a routerLink="/about">会社情報</a></li>
         <li class="navigation-items"><a routerLink="/help">問い合わせ</a></li>
       </ul>
     </nav>
-    <small class="copy_right_text">L.I.S co.,ltd. All rights reserved.</small>
+    <div class="copy_right_text">L.I.S co.,ltd. All rights reserved.</div>
     <!-- <img src='../assets/img/l.i.s_footer_pc.svg'> -->
 </footer>
