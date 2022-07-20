@@ -1,3 +1,27 @@
-<p class="page_title">NEWS</p>
+<div class="news_page_content" 
+    fxLayout="column"
+    fxLayoutAlign="start center">
+    <div class="Top_img" fxFlex="100">
+        <img src="../../assets/img/news/20210429/image 20.png" alt="top image">
+    </div>
+    
+    <div class="news_date">
+        <p>{{news_conf.date}}</p>
+    </div>
 
-<app-news-list></app-news-list>
+    <div class="news_title">
+        <p>{{news_conf.title}}</p>
+    </div>
+
+    <div class="news_detail">
+        <p [innerHTML]="news_conf.detail"></p>
+    </div>
+</div>
+
+<div class="news_page_controller" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="40px">
+    <div class="next_news">← Next</div>
+    <div class="prev_news">Prev →</div>
+</div>
+<div class="news_back" fxLayoutAlign="center">
+    <p>Back</p> 
+</div>

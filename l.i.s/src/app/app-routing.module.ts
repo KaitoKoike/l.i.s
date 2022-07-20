@@ -14,6 +14,7 @@ const routes: Routes = [
   {path:'newslist',component:NewsListComponent},
   {path:'help',component:HelpComponent},
   {path:'about',component:AboutComponent},
+  {path:'newsExample',component:NewsComponent},
   {path:'',redirectTo:'/TopPage',pathMatch:'full'}
 ];
 

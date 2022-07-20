@@ -1,0 +1,130 @@
+
+.Top_img{
+    margin-bottom: 40px;
+    max-width: 1000px;
+    width:100%;
+    height: auto;
+}
+
+.Top_img img {
+    width: 100%;
+}
+
+.news_date ,.news_title, .news_detail {
+    max-width: 670px;
+    width:67%;
+}
+
+.news_page_content{
+    margin-bottom: 64px;
+}
+
+.news_date {
+    margin-bottom: 16px;
+    /* JP/Reg/14px */
+
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #231815;
+}
+
+.news_title{
+    margin-bottom: 32px;
+    /* JP/Reg/20px */
+
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #231815;
+}
+
+.news_detail{
+    /* JP/Reg/14px */
+
+font-family: 'YuMincho';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+/* or 21px */
+
+letter-spacing: 0.03em;
+
+/* color-primary */
+
+color: #231815;
+}
+
+.news_page_controller {
+    margin-bottom: 32px;
+}
+
+.prev_news{
+    /* JP/Reg/20px */
+
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #231815;
+}
+
+.next_news{
+    /* JP/Reg/20px */
+
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #231815;
+}
+
+.news_back {
+    margin-bottom: 240px;
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+
+    /* color-primary */
+
+    color: #231815;
+
+}
+
