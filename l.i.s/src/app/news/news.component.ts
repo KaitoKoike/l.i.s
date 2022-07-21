@@ -14,6 +14,8 @@ export class NewsComponent implements OnInit {
   news_conf = {
     'date':'2021-04-29',
     'title':'4/30～　Drumohr オンラインショップ 40％OFF キャンペーン開催',
+    'before':'/newslist',
+    'next':'/TopPage',
     'detail':`いつもドルモア オンラインショップをご利用いただきありがとうございます。<br>
     <br>
     ドルモア オンラインショップでは、上記日程より一部の商品に対して40％OFFでお買物をお楽しみいただけます。お得なこの機会をどうぞお見逃しなく。<br>

@@ -1,3 +1,6 @@
+.image_carousel{
+    margin-top: 80px;
+}
 
 .top_image_slide img {
     max-width: 1000px;
@@ -8,4 +11,11 @@
 
 .carousel{
     margin-bottom: 104px;
+}
+
+@media (max-width:768px) {
+    .image_carousel{
+        margin-top:16px
+    }
+    
 }

@@ -19,9 +19,11 @@
 </div>
 
 <div class="news_page_controller" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="40px">
-    <div class="next_news">← Next</div>
-    <div class="prev_news">Prev →</div>
+    <a routerLink="{{news_conf.next}}"><div class="next_news">← Next</div> </a>
+    <a routerLink="{{news_conf.before}}" ><div class="prev_news">Prev →</div></a>
 </div>
-<div class="news_back" fxLayoutAlign="center">
-    <p>Back</p> 
-</div>
+
+    <div class="news_back" fxLayoutAlign="center">
+        <a routerLink="/newslist"><p>Back</p> </a>
+    </div>
+

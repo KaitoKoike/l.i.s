@@ -17,15 +17,18 @@
     text-align: justify;
     letter-spacing: 0.03em;
     margin-bottom: 100px;
+
+}
+p {
+    margin: 0 ;
 }
 
 .companyInfo {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 333px;
-    margin-left: 400px;
+    margin-bottom: 309px;
+}
+
+dt p {
+    width: 119px;
 }
 
 
@@ -42,11 +45,55 @@ dt,dd {
     /* color-primary */
     color: #231815;
 }
-dt {
-    width: 15%;
-}
 
-dd {
-    width: 85%;
-}
+@media (max-width:768px) {
+    .companyInfo{
+        margin-bottom: 64px;
+        /* JP/Reg/14px */
+        font-family: 'YuMincho';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        /* or 21px */
 
+        letter-spacing: 0.03em;
+
+        /* color-primary */
+
+        color: #231815;
+    }
+    p {
+        margin: 0;
+    }
+    dt{
+        margin-bottom: 16px;
+    }
+    dd{
+        margin-bottom: 40px;
+    }
+    dd p{
+        height: auto;
+    }
+    .info_title{
+        margin-bottom: 48px;
+        /* JP/Reg/32px */
+        font-family: 'YuMincho';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 150%;
+        /* identical to box height, or 48px */
+
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        letter-spacing: 0.03em;
+
+        /* color-primary */
+
+        color: #231815;
+
+    }
+    
+}
