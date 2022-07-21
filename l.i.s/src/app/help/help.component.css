@@ -4,8 +4,20 @@
 
 
 .help_page {
-    max-width: 670px;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+.help_form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.help_div {
+    max-width: 670px;
+    width: 100%;
+    margin-top: -40px;
 }
 
 .help_title  {
@@ -29,6 +41,9 @@
 }
 
 .help_detail {
+    margin-bottom: 100px;
+
+
     /* JP/Reg/14px */
     display:block;
     font-family: 'YuMincho';
@@ -44,7 +59,6 @@
     /* color-primary */
 
     color: #231815;
-    margin-bottom: 100px;
 }
 
 form {
@@ -97,3 +111,28 @@ mat-form-field {
     width: 10px;    
 }
 
+@media (max-width:768px) {
+    .help_title{
+        /* JP/Reg/32px */
+        font-family: 'YuMincho';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 150%;
+        /* identical to box height, or 48px */
+
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        letter-spacing: 0.03em;
+
+        /* color-primary */
+
+        color: #231815;
+    }
+
+    .help_detail{
+        margin-bottom: 48px;
+
+    }
+}
