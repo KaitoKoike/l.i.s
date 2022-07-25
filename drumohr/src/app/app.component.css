@@ -1,4 +1,10 @@
 header {
+    background-color: beige;
+    height: 100px;
+    max-width: 1440px;
+    width:100%;
+
+
     /* EN/Reg/16px */
     font-family: 'Cormorant Garamond';
     font-style: normal;
@@ -16,4 +22,47 @@ header {
 
     color: #231815;
 
+}
+
+
+.header .navigation{
+    margin-left:15%
+}
+
+footer {
+    /* EN/Reg/14px */
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #231815;
+}
+
+a {
+    
+    text-decoration: none;
+}
+
+footer .footer_navigation_company {
+    /* JP/Reg/14px */
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #231815;
 }
