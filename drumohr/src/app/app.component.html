@@ -8,16 +8,15 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <!-- header -->
-<div class="content" role="main">
+<div class="content" role="main" fxLayout="column" fxLayoutAlign="start center">
   <header class="header" 
           role="banner"
-          gdAuto
-          gdArea="space logo navi"
-          gdColumns="calc((100% - 128px)/2) 128px calc((100% - 128px)/2) "
+          fxLayout="row"
+          fxLayoutAlign="space-between center"
   >
-    <div gdarea="space"></div>
-    <div class="drumohr_logo" gdarea='logo' fxLayoutAlign="center center"><a routerLink="/TopPage"><img src="../assets/drumohr_header/logo/drumohr_pc_logo.svg"></a></div>
-    <div class="navigation" gdarea="navigation" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="2.77%" >
+    <div class="space"></div>
+    <div class="drumohr_logo" fxLayoutAlign="center center"><a routerLink="/TopPage"><img src="../assets/drumohr_header/logo/drumohr_pc_logo.svg"></a></div>
+    <div class="navigation" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="40px" >
       <div class="shop_navigation">SHOP</div>
       <div class="ecPage_navigation">ONLINE STORE</div>
     </div>
@@ -29,9 +28,9 @@
 
 
   <!-- Footer -->
-  <footer>
-    <div class="footer_navigation">
-      <div class="footer_navigation_ec">
+  <footer fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="85px">
+    <div class="footer_navigation" fxLayout="row" fxLayoutGap="100px" fxLayoutAlign="end start">
+      <div class="footer_navigation_ec" fxLayout='column' fxLayoutGap='16px'>
         <a>SHOP</a>
         <a>ONLINE STORE <img src="../assets/img/logo/arrow.svg"></a>
         <a>CONTACT</a>
@@ -39,16 +38,16 @@
       <div class="footer_navigation_company">
         運営情報
       </div>
-      <div class="footer_navigation_insta">
-        <a href="https://www.instagram.com/drumohr_tokyo/">
+      <div class="footer_navigation_insta" fxLayout="row" fxLayoutAlign="center start">
+        <a href="https://www.instagram.com/drumohr_tokyo/" fxLayout='row' fxLayoutAlign='center center' fxLayoutGap="8px">
           <img src="../assets/img/logo/instagram.svg">
           <p>Instagram</p>
         </a>
       </div>
     </div>
 
-    <div class="copy_rights">
-      L.I.S co.,ltd. All rights reserved.
+    <div class="copy_rights" fxLayoutAlign="start start"  >
+      <p>L.I.S co.,ltd. All rights reserved.</p>
     </div>
   </footer>
 
