@@ -1,6 +1,21 @@
 <!--画像をスライドさせる-->
-<app-image-carousel class="image-carousel"></app-image-carousel>
+<div [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 0.3ms'}}">
+    <app-image-carousel 
+    class="image-carousel" 
+    fadein_element
+    #intersection="intersection"
+    [class.example-card--is-intersecting]="intersection._isIntersecting"
+    (isIntersecting)="isIntersecting($event)"
+    [isContinuous]="true"></app-image-carousel>
+</div>
+
 <!--ブランドリンク-->
-<app-brand-components class="brand_link"></app-brand-components>
+<div [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 500ms'}}">
+    <app-brand-components class="brand_link" ></app-brand-components>
+</div>
+
 <!--ニュースリンク-->
-<app-news-component></app-news-component>
+<div [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 800ms'}}" >
+    <app-news-component></app-news-component>
+</div>
+

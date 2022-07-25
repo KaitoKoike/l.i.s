@@ -1,23 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener, ElementRef, ViewChild, AfterViewInit  } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { animationFrames } from 'rxjs';
+import { animation_list } from '../animation';
 
 @Component({
   selector: 'app-image-carousel',
   templateUrl: './image-carousel.component.html',
-  styleUrls: ['./image-carousel.component.css']
+  styleUrls: ['./image-carousel.component.css'],
+  animations:animation_list
 })
-export class ImageCarouselComponent implements OnInit {
+export class ImageCarouselComponent implements OnInit{
 
-  constructor() { }
+    constructor() { }
 
   ngOnInit(): void {
   }
   slides = [
-    {img: "../assets/img/lis_top/Drumor.png"},
-    {img: "../assets/img/lis_top/Drumor.png"},
-    {img: "../assets/img/lis_top/Drumor.png"}
+    {img: "../assets/img/lis_top/image_carousel/carousel_01.png"},
+    {img: "../assets/img/lis_top/image_carousel/carousel_02.png"},
+    {img: "../assets/img/lis_top/image_carousel/carousel_03.png"}
   ];
   slideConfig = {
     //slickの設定
@@ -26,36 +29,16 @@ export class ImageCarouselComponent implements OnInit {
     "autoplay":true,
     "dots":true,
     'adaptiveHeight':false,
-    'arrows':false
+    'arrows':false,
+    'autoplaySpeed':2000,
+    'speed':1000
     
   };
+  slickInit(e:any){
+    console.log('make carousel.')
+  }
 
-  _trackBy(slide:any) {
-    return slide.img;
-  }
-  addSlide() {
-    //this.slides.push({img: "http://placehold.it/350x150/777777"})
-  }
-  
-  removeSlide() {
-    this.slides.length = this.slides.length - 1;
-  }
-  
-  slickInit(e:any) {
-    console.log('slick initialized');
-  }
-  
-  breakpoint(e:any) {
-    console.log('breakpoint');
-  }
-  
-  afterChange(e:any) {
-    console.log('afterChange');
-  }
-  
-  beforeChange(e:any) {
-    console.log('beforeChange');
-  }
-  
 
+    
+  
 }

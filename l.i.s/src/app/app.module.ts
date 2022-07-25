@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatTable, MatTableModule} from '@angular/material/table';
@@ -21,13 +21,14 @@ import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
 import {ImageCarouselComponent} from './image-carousel/image-carousel.component';
 import { BrandComponentsComponent } from './brand-components/brand-components.component';
 import { NewsComponentComponent } from './news-component/news-component.component';
-import { TopPageComponent } from './top-page/top-page.component';
+import { ObserveElementDirective, TopPageComponent } from './top-page/top-page.component';
 import { NewsComponent } from './news/news.component';
 import { EmailValidator, EmailValitorMessage, HelpComponent, PostalCodeValidator, PostalCodeValitorMessage } from './help/help.component';
 import { NewsListComponent } from './news-list/news-list.component'
 import { AboutComponent } from './about/about.component'
 import { HelpFormWrapper} from './help/help-form-wrapper.component';
 import { CustomLayoutDirective, CustomBreakPointsProvider } from './custom-BREAKPOINTS';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -43,9 +44,12 @@ import { CustomLayoutDirective, CustomBreakPointsProvider } from './custom-BREAK
     AboutComponent,
     HelpFormWrapper,
     CustomLayoutDirective,
+    ObserveElementDirective
   ],
   imports:[
+
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     SlickCarouselModule,
     MatTableModule,
@@ -73,7 +77,7 @@ import { CustomLayoutDirective, CustomBreakPointsProvider } from './custom-BREAK
   providers: [
     CustomBreakPointsProvider
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 
 export class AppModule { }

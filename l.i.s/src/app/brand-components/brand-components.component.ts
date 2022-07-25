@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { animation_list } from '../animation';
 
 @Component({
   selector: 'app-brand-components',
   templateUrl: './brand-components.component.html',
-  styleUrls: ['./brand-components.component.css']
+  styleUrls: ['./brand-components.component.css'],
+  animations:animation_list,
 })
 export class BrandComponentsComponent implements OnInit {
 
