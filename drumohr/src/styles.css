@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf') format('truetype');
+}
