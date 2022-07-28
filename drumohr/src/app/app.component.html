@@ -10,47 +10,68 @@
 <!-- header -->
 <div class="content" role="main" fxLayout="column" fxLayoutAlign="start center">
   <header class="header" 
-          role="banner"
+          role="banner"ƒ
           fxLayout="row"
           fxLayoutAlign="space-between center"
-  >
-    <div class="space"></div>
-    <div class="drumohr_logo" fxLayoutAlign="center center"><a routerLink="/TopPage"><img src="../assets/drumohr_header/logo/drumohr_pc_logo.svg"></a></div>
-    <div class="navigation" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="40px" >
-      <div class="shop_navigation">SHOP</div>
-      <div class="ecPage_navigation">ONLINE STORE</div>
-    </div>
-  </header>
-
-  <div class="pagecomponent">
-    <router-outlet></router-outlet>
-  </div>
-
-
-  <!-- Footer -->
-  <footer fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="85px">
-    <div class="footer_navigation" fxLayout="row" fxLayoutGap="100px" fxLayoutAlign="end start">
-      <div class="footer_navigation_ec" fxLayout='column' fxLayoutGap='16px'>
-        <a>SHOP</a>
-        <a>ONLINE STORE <img src="../assets/img/logo/arrow.svg"></a>
-        <a>CONTACT</a>
-      </div>
-      <div class="footer_navigation_company">
-        運営情報
-      </div>
-      <div class="footer_navigation_insta" fxLayout="row" fxLayoutAlign="center start">
-        <a href="https://www.instagram.com/drumohr_tokyo/" fxLayout='row' fxLayoutAlign='center center' fxLayoutGap="8px">
-          <img src="../assets/img/logo/instagram.svg">
-          <p>Instagram</p>
+      >
+      <div class="navigate_toggle" ><img *ngIf="isMobileSize$ | async" src="../assets/img/logo/toggle.png" (click)="sidenav.toggle()" ></div>
+      <div class="drumohr_logo" fxLayoutAlign="center center" [ngSwitch]="(isMobileSize$|async)">
+        <a routerLink="/TopPage">
+          <img *ngSwitchCase="false" src="../assets/img/logo/drumohr_pc_logo.svg">
+          <img *ngSwitchCase="true" src="../assets/img/logo/drumohr_top_mobile.svg">
         </a>
       </div>
-    </div>
+      <div class="navigation" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="40px" >
+          <div *ngIf="!(isMobileSize$ | async)" class="shop_navigation"><a href="https://drumohr.base.shop/" (click)="elementItemClick()">SHOP</a></div>
+          <div *ngIf="!(isMobileSize$ | async)" class="ecPage_navigation"><a routerLink="/SHOP" (click)="elementItemClick()">ONLINE STORE</a></div>
+      </div>
+    </header>
+  <mat-sidenav-container [hasBackdrop]="true">
+    <!-- sidenav part start -->
+    <mat-sidenav mode="over" hidden style="background-color:red;" #sidenav fxLayout="column" fxLayoutAlign="center">
+      <div class="shop_navigation" fxLayoutAlign="center start" style="margin: 80px 0 20px 0 ;"><a href="https://drumohr.base.shop/" style="text-align: center;">SHOP</a></div>
+      <div class="ecPage_navigation" fxLayoutAlign="center start" ><a routerLink="/SHOP" style="text-align: center;">ONLINE STORE</a></div>
+    </mat-sidenav>
+    
+    <!-- header part end -->
+    <!-- main content part included header mainContent footer -->
+    <mat-sidenav-content [@fadeInOutAnimation]="(sidenav.opened)? 'opened':'hidden'">
+        <!--<div class="backdrop_fadeIn" id="fullOverLay" *ngIf="sidenav.opened"></div>-->
+        <router-outlet></router-outlet>
+        
+        <!-- Footer -->
+        <footer fxLayout="column" fxLayoutAlign="start center" fxLayoutAlign.xs.mobile="center center">
+          <div class="footer_navigation" 
+              fxLayout="row" 
+              fxLayoutAlign="end start" 
+              fxLayout.xs.mobile="column">
 
-    <div class="copy_rights" fxLayoutAlign="start start"  >
-      <p>L.I.S co.,ltd. All rights reserved.</p>
-    </div>
-  </footer>
+            <div class="footer_navigation_ec" fxLayout='column' fxLayoutGap='16px' fxLayout.xs.mobile="column" fxLayoutAlign.xs.mobile="start end">
+              <div fxLayoutAlign="center start"><a href='google.com'>SHOP</a></div>
+              <div fxLayoutAlign="center start"><a>ONLINE STORE <img src="../assets/img/logo/arrow.svg"></a></div>
+              <div fxLayoutAlign="center start"><a>CONTACT</a></div>
+            </div>
+            <div class="footer_navigation_company" fxLayoutAlign.xs.mobile="start end" fxLayout.xs.mobile="column">
+              <div fxLayoutAlign="center start"> <a href="google.com">運営情報</a></div>
+            </div>
+            <div class="footer_navigation_insta" fxLayoutAlign.xs.mobile="center">
+              <div fxLayoutAlign.xs.mobile="center center">
+                <a href="https://www.instagram.com/drumohr_tokyo/" fxLayout='row' fxLayoutAlign='center center' fxLayoutGap="8px">
+                  <img src="../assets/img/logo/instagram.svg">
+                  <p>Instagram</p>
+                </a>
+              </div>
+              
+            </div>
+          </div>
 
+          <div class="copy_rights" >
+            L.I.S co.,ltd. All rights reserved.
+          </div>
+        </footer>
+    </mat-sidenav-content>
+  
+  </mat-sidenav-container>
 </div>
 
 

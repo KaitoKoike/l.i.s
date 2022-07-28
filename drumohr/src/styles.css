@@ -4,3 +4,5 @@
     font-family: 'Cormorant Garamond';
     src: url('./assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf') format('truetype');
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
