@@ -34,6 +34,8 @@ export class AppComponent {
   elementItemClick(){
     if (this.sidenav.mode == 'over' && this.sidenav.opened){
       this.sidenav.close()
+    }else{
+      console.log(this.sidenav.opened);
     }
   }
   
