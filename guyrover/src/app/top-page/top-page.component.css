@@ -1,0 +1,140 @@
+.top_page {
+    width: 100%;
+}
+
+.top_img{
+    margin-bottom: 156px;
+}
+
+.top_img img {
+    width: 100vw;
+}
+
+.guyrover_detail_text {
+    width: 100%;
+    max-width: 1048px;
+}
+.guyrover_detail_img {
+    width:100vw;
+    margin-bottom: 200px;
+}
+
+.text_h1 {
+    margin:0 0 80px 24px ;
+
+    /* JP/story/36px */
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 200%;
+    /* identical to box height, or 72px */
+
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #231815;
+}
+
+.text_block {
+
+    max-width: 600px;
+    width:60%;
+    margin-bottom: 24px;
+    /* JP/story/16px */
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    /* or 32px */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #231815;
+
+}
+
+.text_blocks {
+    margin:0 24px 176px 24px;
+}
+
+.guyrover_detail_img .img_block{
+    max-width: 1000px;
+    margin-bottom: 64px;
+}
+
+.img_foot {
+    width: 100vw;
+}
+
+.img_foot img{
+    width:100%
+}
+
+@media (max-width:768px) {
+    .top_img{
+        margin-bottom: 64px;
+    }
+
+    .guyrover_detail_text{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 24px;
+    }
+
+    .text_h1 {
+        margin:0 0 40px 24px ;
+        /* JP/Story/18px */
+        font-family: 'YuMincho';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 200%;
+        /* identical to box height, or 36px */
+        /* color-primary */
+        color: #231815;
+    }
+
+    .text_block {    
+        width:100%;
+        margin-bottom: 32px;
+        /* JP/story/14px */
+
+        font-family: 'YuMincho';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 200%;
+        /* or 28px */
+
+        text-align: justify;
+        letter-spacing: 0.03em;
+
+        /* color-primary */
+
+        color: #231815;
+    }
+
+    .text_blocks {
+        margin:0 24px 48px 24px;
+    }
+
+    .guyrover_detail_img{
+        margin-bottom: 80px;
+    }
+    .guyrover_detail_img .img_block{
+        width: 100%;
+        margin-bottom: 40px;        
+    }
+    .guyrover_detail_img .img_block img{
+        width: 70%;
+    }
+}
