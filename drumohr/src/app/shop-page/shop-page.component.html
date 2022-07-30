@@ -1,0 +1,39 @@
+<div class="shop_page">
+    <div class="shop_title_block">
+        <div class="shop_title_title">SHOP</div>
+        <div class="shop_title_desc">営業時間は商業施設に準じます。</div>
+    </div>
+
+    <div class="shop_list" *ngFor="let shop of shop_list_data">
+        <div class="shop" >
+            <div class="shop_name shop_title_font margin_shop_desc">{{shop.shop_name}}</div>
+            
+            <div class="shop_detail" [ngSwitch]="shop.ec_or_shop">
+                <div class="shop_case" *ngSwitchDefault>
+                    <div class="shop_address shop_desc_font margin_shop_desc" >
+                        <span *ngIf="shop.post_cd" >〒{{shop.post_cd}}</span><br>
+                        <span>{{shop.address}}</span>
+                    </div>
+                    <div *ngIf="shop.gm_link" class="google_map_link shop_desc_font margin_shop_desc" fxLayoutAlign="start center">
+                        <a href="{{shop.gm_link}}" class="link_font">Google Map </a> <img class="arrow" src="../../assets/img/logo/arrow.svg">
+                    </div>
+                    <div class="phone_number shop_desc_font">
+                        <span *ngIf="!shop.post_cd">代表電話：</span>
+                        <a href="tel:{{shop.phone_num}}">{{shop.phone_num}}</a>
+                    </div>
+                </div>
+                <div class="ec_case" *ngSwitchCase="'WEB店舗'">
+                    <div class="shop_address shop_desc_font margin_shop_desc">
+                        <span *ngIf="shop.post_cd" >〒{{shop.post_cd}}</span><br>
+                        <span fxLayoutAlign="start center" ><a href="{{shop.address}}" class="link_font">オンラインストア</a><img class="arrow" src="../../assets/img/logo/arrow.svg"></span>
+                    </div>
+                    <div class="phone_number shop_desc_font">
+                        <span *ngIf="!shop.post_cd">代表電話：</span>
+                        <a href="tel:{{shop.phone_num}}">{{shop.phone_num}}</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>    
+</div>
