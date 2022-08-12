@@ -18,9 +18,8 @@ export class ImageCarouselComponent implements OnInit{
   ngOnInit(): void {
   }
   slides = [
-    {img: "../assets/img/lis_top/image_carousel/carousel_01.png"},
-    {img: "../assets/img/lis_top/image_carousel/carousel_02.png"},
-    {img: "../assets/img/lis_top/image_carousel/carousel_03.png"}
+    {img: "../assets/img/lis_top/image_carousel/drumohr_main_key_img.png",link:'http://drumohr.s3-website-ap-northeast-1.amazonaws.com/TopPage'},
+    {img: "../assets/img/lis_top/image_carousel/guyrover_main_key_img.png",link:'http://guyrover.s3-website-ap-northeast-1.amazonaws.com/TopPage'},
   ];
   slideConfig = {
     //slickの設定

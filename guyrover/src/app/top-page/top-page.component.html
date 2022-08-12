@@ -1,6 +1,7 @@
 <div class="top_page" fxLayout="column" fxLayoutAlign="start center">
-    <div class="top_img" fxLayoutAlign="center start" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}">
-        <img src="../../assets/img/main_key_img.png" alt="guyrover shirt">
+    <div class="top_img"  [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}">
+        <img class='key_img' src="../../assets/img/main_key_img.png" alt="guyrover shirt">
+        <img class="scroll_arrow" src="../../assets/scroll_arrow.svg">
     </div>
     
     <div class="guyrover_detail_text" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 500ms'}}">
@@ -12,7 +13,7 @@
             fxLayout="column" 
             fxLayoutAlign="start end"
             fxLayout.xs.mobile="row wrap" 
-            fxLayoutAlign.xs.mobile="end end"  >
+            fxLayoutAlign.xs.mobile="end end" >
             <div class="text_block">
                 GUY ROVER（ギ・ローバー）は、1973年にイタリアのヴィチェンツァにて<br>
                 フランチェスコ ラヴェルダが創業したシャツメーカー。
@@ -32,7 +33,7 @@
         </div>
     </div>
     <div class="guyrover_detail_img" >
-        <div class="img_blocks"  fxLayout="column" fxLayoutAlign="end end" >
+        <div class="img_blocks"  fxLayout="column" fxLayoutAlign="end end">
             <div class="img_block" style="max-width: 1000px;width: 100%;" fxFlexAlign='center' [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 700ms'}}">
                 <img src="../../assets/img/main_upper_img.png" alt="guyrover shirt">
             </div>

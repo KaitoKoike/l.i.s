@@ -2,6 +2,11 @@
     margin-top: 80px;
 }
 
+.image_carousel span {
+    position: absolute;
+    width: 100%;
+}
+
 .top_image_slide img {
     max-width: 1000px;
     width: 100%;

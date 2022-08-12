@@ -150,6 +150,10 @@ footer .copy_rights {
         margin-bottom: 40px;
         margin-left: 0px;
     }
+
+    .footer_navigation_ec .page_link {
+        width: 100%;
+    }
     .footer_navigation_company{
         width: 100%;
         margin-bottom: 16px;
@@ -157,6 +161,11 @@ footer .copy_rights {
     footer .footer_navigation_ec{
         width: 100%;
         margin-bottom: 16px;
+        flex-direction: column;
+        box-sizing: border-box;
+        display: flex;
+        place-content: flex-start;
+        align-items: center !important;
     }
     footer .footer_navigation_insta{
         width: 100%;

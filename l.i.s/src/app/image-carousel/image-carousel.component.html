@@ -1,11 +1,12 @@
 <div class="image_carousel" >
+    
     <ngx-slick-carousel class="carousel" 
         #slickModal="slick-carousel" 
         [config]="slideConfig" 
         (init)="slickInit($event)"
         >
         <div ngxSlickItem *ngFor="let slide of slides;" class="top_image_slide">
-            <img src="{{ slide.img }}" alt="">
+            <a href="{{slide.link}}"><img src="{{ slide.img }}" alt=""></a>
         </div>
     </ngx-slick-carousel>
 </div>

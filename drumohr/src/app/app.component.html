@@ -23,14 +23,14 @@
       </div>
       <div  fxFlex="33" class="navigation" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="40px">
           <div *ngIf="!(isMobileSize$ | async)" class="shop_navigation"><a routerLink="/ShopPage" (click)="elementItemClick()">SHOP</a></div>
-          <div *ngIf="!(isMobileSize$ | async)" class="ecPage_navigation"><a href="https://drumohr.base.shop/" (click)="elementItemClick()">ONLINE STORE</a></div>
+          <div *ngIf="!(isMobileSize$ | async)" class="ecPage_navigation"><a href="https://drumohr.base.shop/" target="_blank" (click)="elementItemClick()">ONLINE STORE</a></div>
       </div>
     </header>
   <mat-sidenav-container [hasBackdrop]="true">
     <!-- sidenav part start -->
-    <mat-sidenav mode="over" hidden style="background-color:red;" #sidenav fxLayout="column" fxLayoutAlign="center">
+    <mat-sidenav mode="over" hidden #sidenav fxLayout="column" fxLayoutAlign="center">
       <div class="shop_navigation" fxLayoutAlign="center start" style="margin: 80px 0 20px 0 ;" (click)="elementItemClick()"><a routerLink="/ShopPage"  style="text-align: center;">SHOP</a></div>
-      <div class="ecPage_navigation" fxLayoutAlign="center start" (click)="elementItemClick()"><a href="https://drumohr.base.shop/"  style="text-align: center;">ONLINE STORE</a></div>
+      <div class="ecPage_navigation" fxLayoutAlign="center start" (click)="elementItemClick()"><a href="https://drumohr.base.shop/" target="_blank" style="text-align: center;">ONLINE STORE</a></div>
     </mat-sidenav>
     
     <!-- header part end -->
@@ -46,10 +46,10 @@
               fxLayoutAlign="end start" 
               fxLayout.xs.mobile="column">
 
-            <div class="footer_navigation_ec" fxLayout='column' fxLayoutGap='16px' fxLayout.xs.mobile="column" fxLayoutAlign.xs.mobile="start end">
-              <div fxLayoutAlign="center start"><a href='google.com'>SHOP</a></div>
-              <div fxLayoutAlign="center start"><a>ONLINE STORE <img src="../assets/img/logo/arrow.svg"></a></div>
-              <div fxLayoutAlign="center start"><a routerLink="/Conntact">CONTACT</a></div>
+            <div class="footer_navigation_ec" fxLayout='column' fxLayoutGap='16px' fxLayoutAlign="start start" fxLayoutAlign.xs.mobile="start">
+              <div ><a routerLink="/ShopPage">SHOP</a></div>
+              <div ><a href="https://drumohr.base.shop/" target="_blank">ONLINE STORE <img src="../assets/img/logo/arrow.svg"></a></div>
+              <div ><a routerLink="/Conntact">CONTACT</a></div>
             </div>
             <div class="footer_navigation_company" fxLayoutAlign.xs.mobile="start end" fxLayout.xs.mobile="column">
               <div fxLayoutAlign="center start"> <a routerLink="/About">運営会社</a></div>

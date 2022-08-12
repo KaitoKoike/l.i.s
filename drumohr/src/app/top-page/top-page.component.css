@@ -4,10 +4,19 @@
 
 .top_img{
     margin-bottom: 156px;
+    position: relative;
 }
 
-.top_img img {
+.top_img .key_img {
     width: 100vw;
+}
+
+.top_img .scroll_arrow {
+    position: absolute;
+    z-index: 99999;
+    left: 50%;
+    bottom: 0%;
+    margin-bottom: 40px;
 }
 
 .drumohr_detail_text {
@@ -16,12 +25,13 @@
 }
 .drumohr_detail_img {
     width:100vw;
+    max-width: 1440px;
     margin-bottom: 200px;
 }
 
 .text_h1 {
-    margin:0 0 80px 24px ;
-
+    margin:0 24px 80px 24px ;
+    width: auto;
     /* JP/story/36px */
     font-family: 'YuMincho';
     font-style: normal;
@@ -72,6 +82,7 @@
 }
 
 .img_foot {
+    max-width: 1440px;
     width: 100vw;
 }
 
@@ -91,7 +102,8 @@
     }
 
     .text_h1 {
-        margin:0 0 40px 24px ;
+        margin:0 24px 40px 24px ;
+        width: auto;
         /* JP/Story/18px */
         font-family: 'YuMincho';
         font-style: normal;

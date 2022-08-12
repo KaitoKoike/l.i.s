@@ -96,6 +96,12 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@jefiozie/ngx-aws-deploy:deploy",
+          "options": {"bucket":"drumohr",
+                      "region":"ap-northeast-1"          
+          }
         }
       }
     }

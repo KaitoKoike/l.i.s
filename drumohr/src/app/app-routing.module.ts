@@ -9,7 +9,8 @@ const routes: Routes = [
   {path:'TopPage',component:TopPageComponent},
   {path:'ShopPage',component:ShopPageComponent},
   {path:'Conntact',component:HelpComponent},
-  {path:'About',component:AboutComponent}
+  {path:'About',component:AboutComponent},
+  {path:'',redirectTo:'/TopPage',pathMatch:'full'}
 ];
 
 @NgModule({

@@ -17,8 +17,8 @@ export class BrandComponentsComponent implements OnInit {
   ngOnInit(): void {
   }
   slides = [
-    {img: "../assets/img/brand_list/drumohr.png",ref:"https://www.google.com"},
-    {img: "../assets/img/brand_list/guy_rover.png",ref:"https://www.google.com"},
+    {img: "../assets/img/brand_list/drumohr.png",ref:"http://drumohr.s3-website-ap-northeast-1.amazonaws.com"},
+    {img: "../assets/img/brand_list/guy_rover.png",ref:"http://guyrover.s3-website-ap-northeast-1.amazonaws.com"},
     //{img: "",ref:""},
 
   ];

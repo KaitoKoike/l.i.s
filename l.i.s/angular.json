@@ -101,6 +101,12 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@jefiozie/ngx-aws-deploy:deploy",
+          "options": {"bucket":"l.i.s",
+                      "region":"ap-northeast-1"          
+          }
         }
       }
     }

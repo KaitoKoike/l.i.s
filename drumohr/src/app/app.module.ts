@@ -42,6 +42,9 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
+    FlexLayoutModule.withConfig({disableDefaultBps: true,
+                                 addOrientationBps: true
+                                }),
     ReactiveFormsModule,
     GridModule,
     BrowserAnimationsModule,

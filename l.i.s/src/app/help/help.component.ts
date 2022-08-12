@@ -47,7 +47,7 @@ export class HelpComponent {
         required:true,
         labelPosition:'floating',
         attributes:{
-          style:"width:100%;max-width:327px;height:38px"
+          style:"width:100%;max-width:327px;height:38px;border-radius:0px;border: 1px solid #C8C8C8;"
         },
       },      
     },
@@ -62,7 +62,7 @@ export class HelpComponent {
         minLength:1,  
         labelPosition:'floating',
         attributes:{
-          style:"width:100%;max-width:327px;height:38px"
+          style:"width:100%;max-width:327px;height:38px;border-radius:0px;border: 1px solid #C8C8C8;"
 
         },
         
@@ -79,7 +79,7 @@ export class HelpComponent {
         maxLength:7,
         labelPosition:'floating',
         attributes:{
-          style:"width:100%;max-width:327px;height:38px"
+          style:"width:100%;max-width:327px;height:38px;border-radius:0px;border: 1px solid #C8C8C8;"
         },
       },
       validators:{
@@ -146,7 +146,7 @@ export class HelpComponent {
         required:false,        
         labelPosition:'floating',
         attributes:{
-          style:"width:100%;max-width:327px;height:38px"
+          style:"width:100%;max-width:327px;height:38px;border-radius:0px;border: 1px solid #C8C8C8;"
         },
       },
     },
@@ -161,7 +161,7 @@ export class HelpComponent {
         labelPosition:'block',
         description:'市区町村・番地・建物名・部屋番号',
         attributes:{
-          style:'width:100%;height:38px'
+          style:'width:100%;height:38px;border-radius:0px;border: 1px solid #C8C8C8;'
         },
       },
     },
@@ -176,7 +176,7 @@ export class HelpComponent {
         required:true, 
         labelPosition:'floating',
         attributes:{
-          style:'width:100%;height:38px'
+          style:'width:100%;height:38px;border-radius:0px;border: 1px solid #C8C8C8;'
         },
       },
       validators:{
@@ -194,7 +194,7 @@ export class HelpComponent {
         required:false, 
         labelPosition:'floating',
         attributes:{
-          style:'width:100%;max-width:327px;height:38px'
+          style:'width:100%;max-width:327px;height:38px;border-radius:0px;border: 1px solid #C8C8C8;'
         },
       },      
     },
@@ -210,7 +210,7 @@ export class HelpComponent {
         labelPosition:'floating',
         rows:5,
         attributes:{
-          style:'width:100%;'
+          style:'width:100%;border-radius:0px;border: 1px solid #C8C8C8;'
         },
       },      
     },
