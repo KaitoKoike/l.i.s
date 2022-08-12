@@ -16,3 +16,12 @@ export const fadeInOutAnimation = [trigger('fadeInOutAnimation',
     ]
     )
 ];
+export const fadeinAnimation = [trigger('fadeinAnimation',
+        [state('void',style({
+            opacity:0,
+            transform:'translateY(15vh)',
+        })),
+        transition('void=>*',animate('{{time}} ease-in-out'))
+    ]
+    )
+];
