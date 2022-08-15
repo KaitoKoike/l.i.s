@@ -36,10 +36,11 @@ header {
     line-height: 150%;
     /* identical to box height, or 24px */
     /* color-primary */
-
     color: #231815;
-
 }
+
+
+
 
 #fullOverLay {
     position: absolute;
@@ -91,7 +92,6 @@ footer {
 
     color: #231815;
 }
-
 a {
     /* color-primary */
 
@@ -140,8 +140,31 @@ footer .copy_rights {
     max-width: 1000px;
 }
 
+.mincho {
+     /* JP/Reg/14px */
+     font-family: 'YuMincho';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 150%;
+     /* identical to box height, or 21px */
+ 
+     letter-spacing: 0.03em;
+ 
+     /* color-primary */
+ 
+     color: #231815;
+}
 
-
+.garamond_wide{
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* ボックスの高さと同一、または24px */
+    letter-spacing: 0.08em;
+}
 
 @media (max-width:768px) {
 

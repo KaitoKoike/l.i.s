@@ -26,6 +26,7 @@ import { CustomBreakPointsProvider, CustomLayoutDirective } from './custom-BREAK
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ShopPageComponent } from './shop-page/shop-page.component';
 import { AboutComponent } from './about/about.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FlexLayoutModule,
     FlexLayoutModule.withConfig({disableDefaultBps: true,

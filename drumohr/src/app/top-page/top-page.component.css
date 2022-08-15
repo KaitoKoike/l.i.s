@@ -9,15 +9,17 @@
 
 .top_img .key_img {
     width: 100vw;
+    z-index: -2;
 }
 
-.top_img .scroll_arrow {
-    position: absolute;
-    z-index: 99999;
-    left: 50%;
-    bottom: 0%;
+.scroll_arrow {
+    z-index: -1;
     margin-bottom: 40px;
+    position:fixed;
+    bottom:0;
+    right:50%;
 }
+
 
 .drumohr_detail_text {
     width: 100%;
