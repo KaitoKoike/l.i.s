@@ -1,9 +1,8 @@
 <div class="top_page" fxLayout="column" fxLayoutAlign="start center">
-    <div class="top_img"  [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}">
+    <div class="top_img"  [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}" fxLayoutAlign="center start">
         <img class='key_img' src="../../assets/img/main_key_img.png" alt="guyrover shirt">
-        <img class="scroll_arrow" src="../../assets/scroll_arrow.svg">
+        <img class="scroll_arrow" src="../../assets/scroll_arrow.svg"  *ngIf="!(isMobileSize$ | async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}">
     </div>
-    
     <div class="guyrover_detail_text" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 500ms'}}">
         <div class="text_h1">
             イタリアのマシンメイド最高峰シャツブランド
@@ -43,7 +42,6 @@
             </div>            
         </div>
     </div>
-    
     <div class="guyrover_detail_text" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 1100ms'}}">
         <div class="text_h1">
             安定した品質で支持されるファクトリーブランド
@@ -61,12 +59,10 @@
                 ファクトリーブランドとして有名メゾンのシャツも手掛けていることで知られています。
             </div>
         </div>
+    </div>      
+    <div class="img_foot" fxLayout="row" fxLayout.xs.mobile="column" fxLayoutAlign="center start" [ngSwitch]="(isMobileSize$|async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 1200ms'}}">
+        <img *ngSwitchCase="false" src="../../assets/img/main_footer.png" alt="">
+        <img *ngSwitchCase="true" src="../../assets/img/sp/main_footer.png" alt="">
     </div>
-        
-
-        <div class="img_foot" fxLayout="row" fxLayout.xs.mobile="column" fxLayoutAlign="center start" [ngSwitch]="(isMobileSize$|async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 1200ms'}}">
-            <img *ngSwitchCase="false" src="../../assets/img/main_footer.png" alt="">
-            <img *ngSwitchCase="true" src="../../assets/img/sp/main_footer.png" alt="">
-        </div>
 </div>
     
