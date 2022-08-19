@@ -16,19 +16,16 @@ export function PostalCodeValitorMessage(error:any,field:FormlyFieldConfig){
   export function EmailValitorMessage(error:any,field:FormlyFieldConfig){
     return `"${field.formControl?.value}" は正しい形式のメールアドレスではありません`;}
 
-    
+
 @Component({
   selector: 'app-help',
   templateUrl: './help.component.html',
-
-  styleUrls: ['./help.component.css']
+  styleUrls: ['./help.component.css'],
+  providers:[sendEmailService],
 })
-export class HelpComponent implements OnInit{
+export class HelpComponent {
 
   constructor(private mailer:sendEmailService){ }
-  ngOnInit(): void {
-    
-  }
   form = new FormGroup({});
 
   model = {
@@ -224,8 +221,6 @@ export class HelpComponent implements OnInit{
         },
       },      
     },
-    
-
   ];
 
   onSubmit(model:any) {
