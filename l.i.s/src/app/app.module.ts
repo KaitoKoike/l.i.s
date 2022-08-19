@@ -29,6 +29,7 @@ import { AboutComponent } from './about/about.component'
 import { HelpFormWrapper} from './help/help-form-wrapper.component';
 import { CustomLayoutDirective, CustomBreakPointsProvider } from './custom-BREAKPOINTS';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -47,8 +48,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ObserveElementDirective
   ],
   imports:[
-
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     SlickCarouselModule,

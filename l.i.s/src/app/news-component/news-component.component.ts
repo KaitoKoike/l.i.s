@@ -12,11 +12,8 @@ export class NewsComponentComponent implements OnInit {
   ngOnInit(): void {
   }
   slides = [
-    {img: "../assets/img/news/20210429/news_top.png",ref:"https://www.google.com",text:"緊急事態宣言発令による対応に関しまして",news_date:'2022-4-19'},
-    {img: "../assets/img/news/20210429/news_top.png",ref:"https://www.google.com",text:'4/30～　Drumohr オンラインショップ 40％OFF キャンペーン開催',news_date:'2022-4-19'},
-    {img: "../assets/img/news/20210429/news_top.png",ref:"https://www.google.com",text:'ドルモア 2021春夏商品 新作コレクション入荷のお知らせ',news_date:'2022-4-19'},
-    
-
+    //{img: "../assets/img/news/20210429/news_top.png",ref:"https://www.google.com",text:"緊急事態宣言発令による対応に関しまして",news_date:'2022-4-19'},
+    {img: "",ref:"",text:"",news_date:''},
   ];
   slideConfig = {
     //slickの設定
