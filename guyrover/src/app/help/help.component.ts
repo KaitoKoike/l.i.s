@@ -20,15 +20,12 @@ export function PostalCodeValitorMessage(error:any,field:FormlyFieldConfig){
 @Component({
   selector: 'app-help',
   templateUrl: './help.component.html',
-
-  styleUrls: ['./help.component.css']
+  styleUrls: ['./help.component.css'],
+  providers:[sendEmailService],
 })
-export class HelpComponent implements OnInit{
+export class HelpComponent {
 
   constructor(private mailer:sendEmailService){ }
-  ngOnInit(): void {
-    
-  }
   form = new FormGroup({});
     
   model = {

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
-@Injectable({providedIn:'root'})
+@Injectable({providedIn:'any'})
 export class sendEmailService {
   constructor(private http: HttpClient) { }
   api_url :string = 'https://h7652pzhe9.execute-api.ap-northeast-1.amazonaws.com/v2/send'
