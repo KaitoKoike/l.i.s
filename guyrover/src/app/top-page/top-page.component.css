@@ -59,6 +59,7 @@
     max-width: 600px;
     width:60%;
     margin-bottom: 24px;
+    margin-right:20px;
     /* JP/story/16px */
     font-family: 'YuMincho';
     font-style: normal;
@@ -119,6 +120,7 @@
     .text_block {    
         width:auto;
         margin-bottom: 32px;
+        margin-right:0px;
         /* JP/story/14px */
 
         font-family: 'YuMincho';
