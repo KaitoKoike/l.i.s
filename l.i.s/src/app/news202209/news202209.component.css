@@ -13,13 +13,37 @@ a {
     width: 100%;
 }
 
-.news_date ,.news_title, .news_detail {
+.news_list{
     max-width: 670px;
     width:67%;
+    margin-bottom: 40px;
+}
+
+.news_date ,.news_title, .news_detail {
+    width:100%;
 }
 
 .news_page_content{
     margin-bottom: 64px;
+}
+
+.news_sup_title {
+    margin-bottom: 40px;
+    max-width: 670px;
+    width:67%;
+    /* JP/Reg/20px */
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
+    /* or 30px */
+
+    letter-spacing: 0.03em;
+
+    /* color-primary */
+
+    color: #231815;
 }
 
 .news_date {
@@ -59,22 +83,28 @@ a {
 }
 
 .news_detail{
+    padding-bottom: 20px;
+
     /* JP/Reg/14px */
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
 
-font-family: 'YuMincho';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 150%;
-/* or 21px */
+    letter-spacing: 0.03em;
 
-letter-spacing: 0.03em;
+    /* color-primary */
 
-/* color-primary */
-
-color: #231815;
+    color: #231815;
 }
 
+hr {
+    height: 1px;
+    background-color: #C8C8C8;
+    border: none;
+}
 
 .news_detail p {
     margin: 0;
@@ -144,6 +174,32 @@ color: #231815;
         margin-top: -16px;
         margin-bottom: 24px;
     }
+
+    .news_list{
+        max-width: 670px;
+        width:90%;
+        margin-bottom: 40px;
+    }
+
+    .news_sup_title {
+        margin-bottom: 20px;
+        max-width: 670px;
+        width:90%;
+        /* JP/Reg/20px */
+        font-family: 'YuMincho';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        /* or 30px */
+    
+        letter-spacing: 0.03em;
+    
+        /* color-primary */
+    
+        color: #231815;
+    }
+
     .news_date {
         margin-bottom: 16px;
         width: 100%;
@@ -170,7 +226,7 @@ color: #231815;
         font-family: 'YuMincho';
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 150%;
         /* or 30px */
 

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { News2022092401Component } from './news2022092401.component';
+import { News202209Component } from './news202209.component';
 
-describe('News2022092401Component', () => {
-  let component: News2022092401Component;
-  let fixture: ComponentFixture<News2022092401Component>;
+describe('News202209Component', () => {
+  let component: News202209Component;
+  let fixture: ComponentFixture<News202209Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ News2022092401Component ]
+      declarations: [ News202209Component ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(News2022092401Component);
+    fixture = TestBed.createComponent(News202209Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

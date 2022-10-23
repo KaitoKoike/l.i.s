@@ -2,7 +2,7 @@
     <div class="title">
         NEWS
     </div>
-    <div [ngSwitch]="slides.length" >
+    <div [ngSwitch]="infos.length" >
         <div *ngSwitchCase="0">
             <span>there is no news</span>
         </div>
@@ -15,7 +15,7 @@
             fxLayout.xs="column"
             box-sizing="border-box"
         >
-            <div *ngFor="let slide of this.slides;"  
+            <div *ngFor="let info of this.infos;"  
                 class="news_item"
                 fxLayout="column"
                 fxLayout.xs.mobile="row"
@@ -24,14 +24,14 @@
                 fxFlex.xs.mobile="auto"
                 box-sizing="border-box"
                 fxLayoutAlign="start start">
-                <a routerLink="{{slide.ref}}"
+                <a routerLink="{{info.ref}}"
                 fxFlex="34">
-                    <img src="{{ slide.img }}" alt="" class="news_image">
+                    <img src="{{ info.img }}" alt="" class="news_image">
                 </a>
                 <div class="news_description"
                     fxFlex.xs.mobile="66">
-                    <p class="news_date">{{slide.date}}</p>
-                    <p class="news_text">{{slide.title}}</p>
+                    <p class="news_date">{{info.date}}</p>
+                    <p class="news_text">{{info.title}}</p>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
         fxLayoutAlign="end center"
         fxLayout.xs.mobile="column"
         fxLayoutAlign.xs.mobile="center center"
-        *ngIf="slides.length>1">
+        *ngIf="this.infos.length>0">
         <a  routerLink="/newslist" class="news_detail_link">View more</a>
     </div>
 </div>

@@ -1,5 +1,16 @@
 import { NONE_TYPE } from "@angular/compiler";
 
+const news_inf = {
+    '2022-09-30':{
+        'date':'2022.09.30',
+        'img':'../assets/img/news/20210429/news_top.png',
+        'ref':'/news202209',
+        'title':'9月のメディア掲載情報を掲載しました。',
+        'before':null,
+        'next':null
+    }
+    
+}
 
 const news_conf = {
     'date':'2021-04-29',
@@ -99,5 +110,6 @@ const news_lists = {
 }
 
 export const NewsTextsProvider = {
-    value : news_lists
+    value : news_lists,
+    info:news_inf
 };

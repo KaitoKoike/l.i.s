@@ -12,26 +12,28 @@ export class NewsComponentComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.get_latest_3news(this.news_confs);
-    this.get_news_contents(this.news_confs);
+    this.get_latest_3infos(this.news_inf);
+    this.get_info_contents(this.news_inf);
   }
 
-  news_confs:any = NewsTextsProvider.value;
+  news_inf:any = NewsTextsProvider.info;
   sorted_keys:any[] = [];
   use_keys:any[] = [];
-  slides:any[] = [];
+  infos:any[] = [];
 
-  get_latest_3news(news_confs:any){
-    for (let key in news_confs){
+  get_latest_3infos(news_info:any){
+    console.log(this.news_inf)
+    for (let key in this.news_inf){
       this.sorted_keys.push(key)
     }
     this.use_keys = this.sorted_keys.sort().reverse().slice(0,3);
   }
 
-  get_news_contents(news_confs:any){
+  get_info_contents(news_inf:any){
       this.use_keys.forEach(key => {
-        this.slides.push(news_confs[key]);
+        this.infos.push(news_inf[key]);
       });
+      console.log(this.infos);
   }
    
   
