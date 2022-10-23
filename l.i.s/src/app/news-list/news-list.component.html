@@ -14,15 +14,15 @@
         fxLayout.xs.mobile="column"
 
         >
-        <mat-card  *ngFor="let news of newsList;"
+        <mat-card  *ngFor="let news of this.slides;"
                    fxFlex="0 1 calc(33.3% - 40px)"  
                    fxLayout.xs.mobile="row"
                    fxFlex.xs.mobile="auto"
                    box-sizing="border-box"
         >
             <div  class="img_div" > <img mat-card-image  src={{news.img}}> </div>
-            <div class="news_description"  >
-                <mat-card-subtitle>{{news.news_date}}</mat-card-subtitle>
+            <div class="news_description">
+                <mat-card-subtitle>{{news.date}}</mat-card-subtitle>
                 <mat-card-content>{{news.title}}</mat-card-content>
             </div>
             <a routerLink="{{news.ref}}"></a>

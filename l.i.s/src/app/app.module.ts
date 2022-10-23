@@ -8,7 +8,6 @@ import {MatCardModule} from '@angular/material/card';
 import {BREAKPOINTS, DEFAULT_BREAKPOINTS, FlexLayoutModule} from '@angular/flex-layout';
 import { GridModule } from '@angular/flex-layout';
 
-
 // 画像スライダー用モジュール
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
@@ -30,6 +29,14 @@ import { HelpFormWrapper} from './help/help-form-wrapper.component';
 import { CustomLayoutDirective, CustomBreakPointsProvider } from './custom-BREAKPOINTS';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { News2022092101Component } from './news2022092101/news2022092101.component';
+import { News2022092102Component } from './news2022092102/news2022092102.component';
+import { News2022092301Component } from './news2022092301/news2022092301.component';
+import { News2022092302Component } from './news2022092302/news2022092302.component';
+import { News2022092401Component } from './news2022092401/news2022092401.component';
+import { News2022092402Component } from './news2022092402/news2022092402.component';
+import { News2022092801Component } from './news2022092801/news2022092801.component';
+import { News2022092901Component } from './news2022092901/news2022092901.component';
 
 
 @NgModule({
@@ -45,7 +52,15 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     HelpFormWrapper,
     CustomLayoutDirective,
-    ObserveElementDirective
+    ObserveElementDirective,
+    News2022092101Component,
+    News2022092102Component,
+    News2022092301Component,
+    News2022092302Component,
+    News2022092401Component,
+    News2022092402Component,
+    News2022092801Component,
+    News2022092901Component
   ],
   imports:[
     BrowserModule,
