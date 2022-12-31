@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {NewsTextsProvider} from '../../assets/news/news_text';
 
 @Component({
-  selector: 'app-news202209',
-  templateUrl: './news202209.component.html',
-  styleUrls: ['./news202209.component.css']
+  selector: 'app-news202210',
+  templateUrl: './news202210.component.html',
+  styleUrls: ['./news202210.component.css']
 })
-export class News202209Component implements OnInit {
+export class News202210Component implements OnInit {
 
   constructor() {;
     
@@ -16,13 +16,13 @@ export class News202209Component implements OnInit {
     this.get_keys_news(this.news_conf);
     this.get_news_conds(this.news_conf);
   }
-  news_id = 'news20220921';
-  news_sup_title = '9月のメディア掲載情報'
-  use_news_cond = "09";
+  news_id = 'news20221025';
+  news_sup_title = '10月のメディア掲載情報'
+  use_news_cond = "10";
   news_keys:any[] = [];
   news_list:any[] = [];
-  news_conf = NewsTextsProvider.value.news202209;
-  news_inf = NewsTextsProvider.info['2022-09-30'];
+  news_conf = NewsTextsProvider.value.news202210;
+  news_inf = NewsTextsProvider.info['2022-10-25'];
   news_content:any  ;
   
   get_keys_news(news_conf:any){

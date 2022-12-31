@@ -30,6 +30,7 @@ import { CustomLayoutDirective, CustomBreakPointsProvider } from './custom-BREAK
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { News202209Component } from './news202209/news202209.component';
+import { News202210Component } from './news202210/news202210.component';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { News202209Component } from './news202209/news202209.component';
     CustomLayoutDirective,
     ObserveElementDirective,
     News202209Component,
+    News202210Component,
   ],
   imports:[
     BrowserModule,

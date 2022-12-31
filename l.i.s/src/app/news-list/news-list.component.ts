@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NewsTextsProvider } from '../news_text';
+import { NewsTextsProvider } from '../../assets/news/news_text';
 
 @Component({
   selector: 'app-news-list',

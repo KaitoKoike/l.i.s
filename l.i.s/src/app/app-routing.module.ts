@@ -8,6 +8,7 @@ import { HelpComponent } from './help/help.component';
 import { NewsListComponent } from './news-list/news-list.component'
 import { AboutComponent } from './about/about.component';
 import { News202209Component } from './news202209/news202209.component';
+import { News202210Component } from './news202210/news202210.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path:'about',component:AboutComponent},
   {path:'newsExample',component:NewsComponent},
   {path:'news202209',component:News202209Component},
+  {path:'news202210',component:News202210Component},
   {path:'',redirectTo:'/TopPage',pathMatch:'full'}
 ];
 
