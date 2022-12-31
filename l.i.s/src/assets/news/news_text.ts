@@ -3,7 +3,7 @@ import { NONE_TYPE } from "@angular/compiler";
 const news_inf = {
     '2022-09-30':{
         'date':'2022.09.30',
-        'img':'../assets/img/news/20210429/news_top.png',
+        'img':'../assets/img/news/20210429/news_top.JPG',
         'ref':'/news202209',
         'title':'9月のメディア掲載情報',
         'before':null,
@@ -11,7 +11,7 @@ const news_inf = {
     },
     '2022-10-25':{
         'date':'2022.10.25',
-        'img':'../assets/img/news/20210429/news_top.png',
+        'img':'../assets/img/news/20210429/news_top.JPG',
         'ref':'/news202210',
         'title':'10月のメディア掲載情報',
         'before':`/news202209`,
@@ -30,7 +30,7 @@ const news_lists = {
             'ref':'/news2022092101',
             'before':'',
             'next':'/news2022092102',
-            'img':"../assets/img/news/20210429/news_top.png"
+            'img':"../assets/img/news/20210429/news_top.JPG"
         },
         "news2022092102":{
             'date':'2022.09.21',
@@ -40,7 +40,7 @@ const news_lists = {
             'ref':'/news2022092102',
             'before':'/news2022092101',
             'next':'/news2022092301',
-            'img':"../assets/img/news/20210429/news_top.png"
+            'img':"../assets/img/news/20210429/news_top.JPG"
         },
         "news2022092301":{
             'date':'2022.09.23',
@@ -50,7 +50,7 @@ const news_lists = {
             'ref':'/news2022092301',
             'before':'/news2022092102',
             'next':'/news2022092302',
-            'img':"../assets/img/news/20210429/news_top.png"
+            'img':"../assets/img/news/20210429/news_top.JPG"
         },
         "news2022092302":{
             'date':'2022.09.23',
@@ -60,7 +60,7 @@ const news_lists = {
             'ref':'/news2022092302',
             'before':'/news2022092301',
             'next':'/news2022092401',
-            'img':"../assets/img/news/20210429/news_top.png"
+            'img':"../assets/img/news/20210429/news_top.JPG"
         },
         "news2022092401":{
             'date':'2022.09.24',
@@ -70,7 +70,7 @@ const news_lists = {
             'ref':'/news2022092401',
             'before':'/news2022092302',
             'next':'/news2022092402',
-            'img':"../assets/img/news/20210429/news_top.png"
+            'img':"../assets/img/news/20210429/news_top.JPG"
         },
         "news2022092402":{
             'date':'2022.09.24',
@@ -80,7 +80,7 @@ const news_lists = {
             'ref':'/news2022092402',
             'before':'/news2022092401',
             'next':'/news2022092801',
-            'img':"../assets/img/news/20210429/news_top.png"
+            'img':"../assets/img/news/20210429/news_top.JPG"
         },
         "news2022092801":{
             'date':'2022.09.28',
@@ -90,7 +90,7 @@ const news_lists = {
             'ref':'/news2022092801',
             'before':'/news2022092402',
             'next':'/news2022092901',
-            'img':"../assets/img/news/20210429/news_top.png"
+            'img':"../assets/img/news/20210429/news_top.JPG"
         },
         "news2022092901":{
             'date':'2022.09.29',
@@ -100,7 +100,7 @@ const news_lists = {
             'ref':'/news2022092901',
             'before':'/news2022092801',
             'next':'2022093001',
-            'img':"../assets/img/news/20210429/news_top.png"
+            'img':"../assets/img/news/20210429/news_top.JPG"
         },
         "news2022093001":{
             'date':'2022.09.30',
@@ -110,7 +110,7 @@ const news_lists = {
             'ref':'/news2022093001',
             'before':'/news2022092901',
             'after':'/news2022102501',
-            'img':'../assets/img/news/20220429/news_top.png'
+            'img':'../assets/img/news/20220429/news_top.JPG'
         }
     },
     'news202210':{
