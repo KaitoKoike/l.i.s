@@ -11,6 +11,8 @@ a {
 
 .Top_img img {
     width: 100%;
+    aspect-ratio: 3 / 2;
+
 }
 
 .news_list{

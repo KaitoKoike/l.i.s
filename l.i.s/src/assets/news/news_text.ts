@@ -15,6 +15,14 @@ const news_inf = {
         'ref':'/news202210',
         'title':'10月のメディア掲載情報',
         'before':`/news202209`,
+        'next':`/news202211`,
+    },
+    '2022-11-25':{
+        'date':'2022.11.25',
+        'img':'../assets/img/news/y=2022/m=11/news_top.jpg',
+        'ref':'/news202211',
+        'title':'11月のメディア掲載情報',
+        'before':`/news202210`,
         'next':null
     }
     
@@ -159,7 +167,65 @@ const news_lists = {
             'before':'/news2022102505',
             'after':null
         }
+    },
+    'news202211':{
+        'news2022112501':{
+            'date':'2022.11.25',
+            'title':'Drumohrのバッファローシャツが「LEON」で紹介されました',
+            'detail':'Drumohrのバッファローシャツが「LEON」オフィシャルWebサイト(2022年11月12日公開）で紹介されました。詳しくは',
+            'url':'https://www.leon.jp/fashions/144429',
+            'ref':'/news2022112501',
+            'before':'/news2022102506',
+            'after':'/news2022112502'
+        },
+        'news2022112502':{
+            'date':'2022.11.25',
+            'title':'Drumohrのニットが、「LEON」で紹介されました。',
+            'detail':'Drumohrのニットが、「LEON」1月号(2022年11月25日発売）で紹介されました。',
+            'url':null,
+            'ref':'/news2022112502',
+            'before':'/news2022112501',
+            'after':'/news2022112503'
+        },
+        'news2022112503':{
+            'date':'2022.11.25',
+            'title':'Drumohrのニットが、「GOETHE」で紹介されました。',
+            'detail':'Drumohrのニットが、「GOETHE」1月号(2022年11月25日発売）で紹介されました。',
+            'url':null,
+            'ref':'/news2022112503',
+            'before':'/news2022112502',
+            'after':'/news20221104'
+        },
+        'news2022112504':{
+            'date':'2022.11.25',
+            'title':'GUY ROVERのシャツが「BEGIN」で紹介されました。',
+            'detail':'GUY ROVERのシャツが「BEGIN」公式Webサイト(2022年11月28日公開）で紹介されました。詳しくは',
+            'url':'https://www.e-begin.jp/article/275398/',
+            'ref':'/news2022112504',
+            'before':'/news2022112503',
+            'after':'/news2022112505'
+        },
+        'news2022112505':{
+            'date':'2022.11.25',
+            'title':'GUY ROVERのシャツが「LEON」で紹介されました',
+            'detail':'GUY ROVERのシャツが「LEON」オフィシャルWebサイト(2022年11月25日公開）で紹介されました。詳しくは',
+            'url':'https://www.leon.jp/fashions/151642?page=3',
+            'ref':'/news2022112505',
+            'before':'/news2022112504',
+            'after':'/news2022112506'
+        },
+        'news2022112506':{
+            'date':'2022.11.25',
+            'title':'GUY ROVERのドレスシャツが、「AERA STYLEMAGAZINE」で紹介されました',
+            'detail':'GUY ROVERのドレスシャツが、「AERA STYLEMAGAZINE」Vol.53 AUTUMN/WINTERA(2022年11月7日発売）で紹介されました',
+            'url':null,
+            'ref':'/news2022112506',
+            'before':'/news2022112505',
+            'after':null
+        },
+            
     }
+    
 }
 
 export const NewsTextsProvider = {
