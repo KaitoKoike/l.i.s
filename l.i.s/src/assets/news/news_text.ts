@@ -165,7 +165,7 @@ const news_lists = {
             'url':null,
             'ref':'/news2022102506',
             'before':'/news2022102505',
-            'after':null
+            'after':'/news2022112501'
         }
     },
     'news202211':{
@@ -194,7 +194,7 @@ const news_lists = {
             'url':null,
             'ref':'/news2022112503',
             'before':'/news2022112502',
-            'after':'/news20221104'
+            'after':'/news2022112504'
         },
         'news2022112504':{
             'date':'2022.11.25',
@@ -221,10 +221,94 @@ const news_lists = {
             'url':null,
             'ref':'/news2022112506',
             'before':'/news2022112505',
-            'after':null
+            'after':'/news2022122501'
         },
             
-    }
+    },
+    'news202212':{
+        'news2022122501':{
+            'date':'2022.12.25',
+            'title':'Drumohrのニットが「LEON」で紹介されました',
+            'detail':'Drumohrのニットが「LEON」オフィシャルWebサイト(2022年12月19日公開）で紹介されました。詳しくは',
+            'url':'https://www.leon.jp/fashions/154457',
+            'ref':'/news2022122501',
+            'before':'/news2022112506',
+            'after':'/news2022122502'
+        },
+        'news2022122502':{
+            'date':'2022.12.25',
+            'title':'GUY ROVERのシャツが、「東京カレンダー」で紹介されました',
+            'detail':'GUY ROVERのシャツが「東京カレンダー」2月号(2022年12月21日発売）で紹介されました。',
+            'url':null,
+            'ref':'/news2022122502',
+            'before':'/news2022122501',
+            'after':'/news2022122503'
+        },
+        'news2022122503':{
+            'date':'2022.12.25',
+            'title':'Drumohrのシャツが、「LEON」で紹介されました',
+            'detail':'Drumohrのシャツが「LEON」オフィシャルWebサイト(2022年12月22日公開）で紹介されました。詳しくは',
+            'url':'https://www.leon.jp/fashions/155090?page=2',
+            'ref':'/news2022122503',
+            'before':'/news2022122502',
+            'after':'/news2022122504'
+        },
+        'news2022122504':{
+            'date':'2022.12.25',
+            'title':'Drumohrのモックネックニットが、「Safari」で紹介されました。',
+            'detail':'Drumohrのモックネックニットが、「Safari Online」公式ウェブマガジン(2022年12月24日公開）で紹介されました。詳しくは',
+            'url':'https://safarilounge.jp/online/fashion/detail.php?id=12584',
+            'ref':'/news2022122504',
+            'before':'/news2022122503',
+            'after':'/news2022122505',
+        },
+        'news2022122505':{
+            'date':'2022.12.25',
+            'title':'Drumohrのニットが、「LEON」で紹介されました。',
+            'detail':'Drumohrのニットが、「LEON」2月号(2022年12月25日発売）で紹介されました。',
+            'url':null,
+            'ref':'/news2022122505',
+            'before':'/news2022122504',
+            'after':'/news2023013001',
+        },
+    },
+    'news202301':{
+        'news2023013001':{
+            'date':'2023.01.30',
+            'title':'Drumohrのニットパンツが「Safari」で紹介されました',
+            'detail':'Drumohrのニットパンツが、「Safari Online」公式ウェブマガジン(2023年1月8日公開）で紹介されました。詳しくは',
+            'url':'https://safarilounge.jp/online/fashion/detail.php?id=12674&p=4',
+            'ref':'/news2023013001',
+            'before':'/news2022122505',
+            'after':'/news2023013002'
+        },
+        'news2023013002':{
+            'date':'2023.01.30',
+            'title':'Drumohrのタートルネックニットが、「Safari」で紹介されました',
+            'detail':'Drumohrのタートルネックニットが、「Safari Online」公式ウェブマガジン(2023年1月13日公開）で紹介されました。詳しくは',
+            'url':'https://safarilounge.jp/online/fashion/detail.php?id=12699&p=4',
+            'ref':'/news2023013002',
+            'before':'/news2023013001',
+            'after':'/news2023013003'
+        },
+        'news2023013003':{
+            'date':'2023.01.30',
+            'title':'UY ROVERのシャツが、「Safari」で紹介されました',
+            'detail':'GUY ROVERのシャツが、「Safari Online」公式ウェブマガジン(2023年1月14日公開）で紹介されました。',
+            'url':'https://safarilounge.jp/online/fashion/detail.php?id=12713&p=1',
+            'ref':'/news2023013003',
+            'before':'/news2023013002',
+            'after':'/news2023013004'
+        },
+        'news2023013004':{
+            'date':'2023.01.30',
+            'title':'Drumohrのモックネックニットが、「LEON」で紹介されました。',
+            'detail':'Drumohrのモックネックニットが「LEON」オフィシャルWebサイト(2022年1月30日公開）で紹介されました。詳しくは',
+            'url':'https://www.leon.jp/fashions/160195',
+            'ref':'/news2023013004',
+            'before':'/news2023013003',
+            'after':null,
+        },
     
 }
 
