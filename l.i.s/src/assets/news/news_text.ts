@@ -3,7 +3,7 @@ import { NONE_TYPE } from "@angular/compiler";
 const news_inf = {
     '2022-09-30':{
         'date':'2022.09.30',
-        'img':'../assets/img/news/20210429/news_top.png',
+        'img':'../assets/img/news/y=2022/m=09/news_top.png',
         'ref':'/news202209',
         'title':'2022年9月のメディア掲載情報',
         'before':null,
@@ -11,7 +11,7 @@ const news_inf = {
     },
     '2022-10-25':{
         'date':'2022.10.25',
-        'img':'../assets/img/news/20210429/news_top.png',
+        'img':'../assets/img/news/y=2022/m=10/news_top.png',
         'ref':'/news202210',
         'title':'2022年10月のメディア掲載情報',
         'before':`/news202209`,
