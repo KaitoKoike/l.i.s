@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { News202209Component } from './news202209/news202209.component';
 import { News202210Component } from './news202210/news202210.component';
 import { News202211Component } from './news202211/news202211.component';
+import { News202212Component } from './news202212/news202212.component';
+import { News202301Component } from './news202301/news202301.component';
 
 
 const routes: Routes = [
@@ -21,6 +23,8 @@ const routes: Routes = [
   {path:'news202209',component:News202209Component},
   {path:'news202210',component:News202210Component},
   {path:'news202211',component:News202211Component},
+  {path:'news202212',component:News202212Component},
+  {path:'news202301',component:News202301Component},
   {path:'',redirectTo:'/TopPage',pathMatch:'full'}
 ];
 

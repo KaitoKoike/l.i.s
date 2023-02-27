@@ -32,6 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { News202209Component } from './news202209/news202209.component';
 import { News202210Component } from './news202210/news202210.component';
 import { News202211Component } from './news202211/news202211.component';
+import { News202212Component } from './news202212/news202212.component';
+import { News202301Component } from './news202301/news202301.component';
 
 
 @NgModule({
@@ -51,6 +53,8 @@ import { News202211Component } from './news202211/news202211.component';
     News202209Component,
     News202210Component,
     News202211Component,
+    News202212Component,
+    News202301Component,
   ],
   imports:[
     BrowserModule,
