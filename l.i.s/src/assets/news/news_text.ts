@@ -3,26 +3,42 @@ import { NONE_TYPE } from "@angular/compiler";
 const news_inf = {
     '2022-09-30':{
         'date':'2022.09.30',
-        'img':'../assets/img/news/20210429/news_top.JPG',
+        'img':'../assets/img/news/20210429/news_top.png',
         'ref':'/news202209',
-        'title':'9月のメディア掲載情報',
+        'title':'2022年9月のメディア掲載情報',
         'before':null,
         'next':'/news202210'
     },
     '2022-10-25':{
         'date':'2022.10.25',
-        'img':'../assets/img/news/20210429/news_top.JPG',
+        'img':'../assets/img/news/20210429/news_top.png',
         'ref':'/news202210',
-        'title':'10月のメディア掲載情報',
+        'title':'2022年10月のメディア掲載情報',
         'before':`/news202209`,
         'next':`/news202211`,
     },
     '2022-11-25':{
         'date':'2022.11.25',
-        'img':'../assets/img/news/y=2022/m=11/news_top.jpg',
+        'img':'../assets/img/news/y=2022/m=11/news_top.png',
         'ref':'/news202211',
-        'title':'11月のメディア掲載情報',
+        'title':'2022年11月のメディア掲載情報',
         'before':`/news202210`,
+        'next':'/news202212'
+    },
+    '2022-12-25':{
+        'date':'2022.12.25',
+        'img':'../assets/img/news/y=2022/m=12/news_top.png',
+        'ref':'/news202212',
+        'title':'2022年12月のメディア掲載情報',
+        'before':`/news202211`,
+        'next':'/news202301'
+    },
+    '2023-01-30':{
+        'date':'2023.01.30',
+        'img':'../assets/img/news/y=2023/m=01/news_top.png',
+        'ref':'/news202301',
+        'title':'2023年1月のメディア掲載情報',
+        'before':`/news202212`,
         'next':null
     }
     
@@ -38,7 +54,7 @@ const news_lists = {
             'ref':'/news2022092101',
             'before':'',
             'next':'/news2022092102',
-            'img':"../assets/img/news/20210429/news_top.JPG"
+            'img':"../assets/img/news/20210429/news_top.png"
         },
         "news2022092102":{
             'date':'2022.09.21',
@@ -48,7 +64,7 @@ const news_lists = {
             'ref':'/news2022092102',
             'before':'/news2022092101',
             'next':'/news2022092301',
-            'img':"../assets/img/news/20210429/news_top.JPG"
+            'img':"../assets/img/news/20210429/news_top.png"
         },
         "news2022092301":{
             'date':'2022.09.23',
@@ -58,7 +74,7 @@ const news_lists = {
             'ref':'/news2022092301',
             'before':'/news2022092102',
             'next':'/news2022092302',
-            'img':"../assets/img/news/20210429/news_top.JPG"
+            'img':"../assets/img/news/20210429/news_top.png"
         },
         "news2022092302":{
             'date':'2022.09.23',
@@ -68,7 +84,7 @@ const news_lists = {
             'ref':'/news2022092302',
             'before':'/news2022092301',
             'next':'/news2022092401',
-            'img':"../assets/img/news/20210429/news_top.JPG"
+            'img':"../assets/img/news/20210429/news_top.png"
         },
         "news2022092401":{
             'date':'2022.09.24',
@@ -78,7 +94,7 @@ const news_lists = {
             'ref':'/news2022092401',
             'before':'/news2022092302',
             'next':'/news2022092402',
-            'img':"../assets/img/news/20210429/news_top.JPG"
+            'img':"../assets/img/news/20210429/news_top.png"
         },
         "news2022092402":{
             'date':'2022.09.24',
@@ -88,7 +104,7 @@ const news_lists = {
             'ref':'/news2022092402',
             'before':'/news2022092401',
             'next':'/news2022092801',
-            'img':"../assets/img/news/20210429/news_top.JPG"
+            'img':"../assets/img/news/20210429/news_top.png"
         },
         "news2022092801":{
             'date':'2022.09.28',
@@ -98,7 +114,7 @@ const news_lists = {
             'ref':'/news2022092801',
             'before':'/news2022092402',
             'next':'/news2022092901',
-            'img':"../assets/img/news/20210429/news_top.JPG"
+            'img':"../assets/img/news/20210429/news_top.png"
         },
         "news2022092901":{
             'date':'2022.09.29',
@@ -108,7 +124,7 @@ const news_lists = {
             'ref':'/news2022092901',
             'before':'/news2022092801',
             'next':'2022093001',
-            'img':"../assets/img/news/20210429/news_top.JPG"
+            'img':"../assets/img/news/20210429/news_top.png"
         },
         "news2022093001":{
             'date':'2022.09.30',
@@ -118,7 +134,7 @@ const news_lists = {
             'ref':'/news2022093001',
             'before':'/news2022092901',
             'after':'/news2022102501',
-            'img':'../assets/img/news/20220429/news_top.JPG'
+            'img':'../assets/img/news/20220429/news_top.png'
         }
     },
     'news202210':{
@@ -309,7 +325,7 @@ const news_lists = {
             'before':'/news2023013003',
             'after':null,
         },
-    
+    }
 }
 
 export const NewsTextsProvider = {
