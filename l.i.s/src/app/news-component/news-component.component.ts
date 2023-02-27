@@ -35,12 +35,6 @@ export class NewsComponentComponent implements OnInit {
       });
       console.log(this.infos);
   }
-   
-  
-  //slides = [
-    //{img: "../assets/img/news/20210429/news_top.png",ref:"https://www.google.com",text:"緊急事態宣言発令による対応に関しまして",news_date:'2022-4-19'},
-  //  {img: "",ref:"",text:"",news_date:''},
-  //];
 
   slideConfig = {
     //slickの設定
