@@ -10,8 +10,13 @@
         box-sizing="border-box"
     >
         <div *ngFor="let slide of slides;" class="brand_item" fxFlex="33" >
-            <a *ngIf="slide.routerlink" routerLink="{{slide.routerlink}}"><img src="{{slide.img}}" alt="" class="brand_logo"></a>
-            <a *ngIf="slide.ref" href="{{slide.ref}}"><img src="{{ slide.img }}" alt="" class="brand_logo"></a>
+            <a *ngIf="slide.routerlink; else noRouterLink" routerLink="{{slide.routerlink}}"><img src="{{slide.img}}" alt="" class="brand_logo"></a>
+            <ng-template #noRouterLink >
+                <a *ngIf="slide.ref; else noLink" href="{{slide.ref}}"><img src="{{ slide.img }}" alt="" class="brand_logo"></a>
+            </ng-template>
+            <ng-template #noLink>
+                <img src="{{ slide.img }}" alt="" class="brand_logo">
+            </ng-template>
         </div>
     </div>
 </div>

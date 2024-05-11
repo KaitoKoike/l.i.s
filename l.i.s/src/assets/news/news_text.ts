@@ -111,7 +111,15 @@ const news_inf = {
         'ref':'/news202311',
         'title':'2023年11月のメディア掲載情報',
         'before':`/news202310`,
-        'next':`/news202312`
+        'next':`/news202403`
+    },
+    '2024-03-16':{
+      'date':'2024.03.16',
+      'img':'../assets/img/news/y=2024/m=03/news_top.png',
+      'ref':'/news202403',
+      'title':'Drumohr 2024年春夏 POP-UP EVENT 【阪急メンズ東京】のお知らせ',
+      'before':`/news202311`,
+      'next':`/`
     }
     
 }
@@ -771,6 +779,24 @@ const news_lists = {
           "url": "https://www.leon.jp/fashions/196310",
           "ref": "/news2023101001",
           "before": "/news2023100701",
+          "after": "/news2023102401"
+        },
+        "news2023102401": {
+          "date": "2023.10.24",
+          "title": "GUY ROVERのシャツが「Forbes JAPAN」で紹介されました",
+          "detail": "GUY ROVERのシャツがForbes JAPAN 公式サイト(2023年10月24日公開）で紹介されました",
+          "url": "https://forbesjapan.com/articles/detail/66128",
+          "ref": "/news2023102401",
+          "before": "/news2023101001",
+          "after": "/news2023102503"
+        },
+        "news2023102503": {
+          "date": "2023.10.25",
+          "title": "GUY ROVERのシャツが「FORBES」で紹介されました",
+          "detail": "GUY ROVERのシャツが「FORBES」12月号(2023年10月25日発売）で紹介されました",
+          "url": null,
+          "ref": "/news2023102503",
+          "before": "/news2023102401",
           "after": null
         }
       },
@@ -778,14 +804,14 @@ const news_lists = {
         "news2023110101": {
           "date": "2023.11.16",
           "title": "Drumohrのクルーネックニットが「BEIGIN」で紹介されました",
-          "detail": "Drumohrのクルーネックニットが「​​BEIGIN」1月号 (2023年11月16日発売）で紹介されました。",
+          "detail": "Drumohrのクルーネックニットが「BEGIN」1月号 (2023年11月16日発売）で紹介されました。",
           "url": null,
           "ref": "/news2023110101",
           "before": "/news2023102901",
           "after": "/news2023110102"
         },
         "news2023110102": {
-          "date": "2023.11.公開予定",
+          "date": "2023.11.16",
           "title": "Drumohrのノルディック柄ニットが「Safari Online」で紹介されました",
           "detail": "Drumohrのノルディック柄ニットが「Safari Online」公式ウェブマガジン (2023年11月公開）で紹介されました。",
           "url": null,
@@ -794,15 +820,75 @@ const news_lists = {
           "after": "/news2023110103"
         },
         "news2023110103": {
-          "date": "2023.11.公開予定",
+          "date": "2023.11.16",
           "title": "Drumohrのモックネックニットが「LEON」で紹介されました",
           "detail": "Drumohrのモックネックニットが「LEON」オフィシャルWebサイト (2023年11月公開）で紹介されました。",
           "url": null,
           "ref": "/news2023110103",
           "before": "/news2023110102",
+          "after": "news2023111001"
+        },
+        "news2023111001":{
+          "date": "2023.11.10",
+          "title": "GUY ROVERのカバーオールが「Safari」で紹介されました",
+          "detail": "GUY ROVERのカバーオールが「Safari Online」公式ウェブマガジン (2023年11月10日公開）で紹介されました",
+          "url": "https://safarilounge.jp/online/fashion/detail.php?id=14604&p=1",
+          "ref": "/news2023111001",
+          "before": "/news2023110103",
+          "after": "/news2023112001"
+        },
+        "news2023112001":{
+          "date": "2023.11.20",
+          "title": "GUY ROVERのシャツが「MEN'S EX」で紹介されました",
+          "detail": "GUY ROVERのシャツが「MEN'S EX」冬号(2023年11月20日発売）で紹介されました",
+          "url": null,
+          "ref": "/news2023112001",
+          "before": "/news2023111001",
+          "after": "/news2023112501"
+        },
+        "news2023112501":{
+          "date": "2023.11.25",
+          "title": "GUY ROVERのシャツが「LEON」で紹介されました",
+          "detail": "GUY ROVERのシャツが「LEON」1月号(2023年11月25日発売）で紹介されました",
+          "url": null,
+          "ref": "/news2023112501",
+          "before": "/news2023112001",
+          "after": null
+        },
+        "news2023120501":{
+          "date": "2023.12.05",
+          "title": "GUY ROVERのダブルカラーシャツが「HODINKEE」で紹介されました",
+          "detail": "GUY ROVERのタブカラーシャツが「HODINKEE」Vol.7 (2023年12月5日発売）で紹介されました",
+          "url": null,
+          "ref": "/news2023120501",
+          "before": "/news2023112501",
           "after": null
         }
-      }
+      },
+      'news202403':{
+        'news2024031601':{
+          "date": "2024.03.16",
+          "title": "Drumohr 2024年春夏 POP-UP EVENT 【阪急メンズ東京】のお知らせ",
+          "detail": `Drumohr の2024年春夏の新作コレクションを数多く集めましたPOP UPイベントを来週3/20(水)より阪急メンズ東京にてスタートいたします。
+      
+          ドルモアの特徴は、徹底的にこだわったそのディテールと素材にあります。
+          Drumohrが考案したシームレスニット（無縫製ニット）は、一着まるごとの状態で、編み機から直接、立体的に編成されます。
+          そのため、ニット本来の手触りと軽さを引き立て、ドレープ性を高めるなど、まさに“理想のニットウェア”です。
+          また、ブランドのアイコンパターンとして知られるビスケット柄ニットは、今も世界中から愛され続けています。
+          
+          200年を超える歴史をもつニットブランドDrumohrの世界観を是非この機会にご覧ください。
+          
+          Drumohr 2024SS POP-UP EVENT 【阪急メンズ東京 4F サードスタイル】
+          ■期間：3月20日(水) ～ 4/2(火)
+          ■阪急メンズ東京 4F　サードスタイル
+          ■03-6252-5438(売場直通)
+          
+          Drumohr POP-UP EVENT｜WHAT'S NEW｜HANKYU MEN'S / 阪急メンズ (hh-online.jp)`,
+          "url": null,
+          "ref": "/news2023120501",
+          "before": "/news2023112501",
+          "after": null
+      }}
 }
 
 export const NewsTextsProvider = {

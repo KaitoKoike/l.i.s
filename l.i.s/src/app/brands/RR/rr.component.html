@@ -1,0 +1,44 @@
+<div class="top_page" fxLayout="column" fxLayoutAlign="start center">
+    <div class="top_img"  [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}" fxLayoutAlign="center start">
+        <img class='key_img' src="../../../assets/img/brands/RR/main_key_img.png" alt="brand shirt" >
+        <img class="scroll_arrow" src="../../../assets/img/brands/RR/scroll_arrow.svg"  *ngIf="!(isMobileSize$ | async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}">
+    </div>
+    <div class="brand_detail_text" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 500ms'}}">
+        <div class="text_h1">
+            ヴィンテージとモダンさが交差する洗練されたデザイン
+        </div>
+        
+        <div class="text_blocks" 
+            fxLayout="column" 
+            fxLayoutAlign="start end"
+            fxLayout.xs.mobile="row wrap" 
+            fxLayoutAlign.xs.mobile="end end" >
+            <div class="text_block">
+                1948年イタリア・フィレンツェに創業。コートを得意とするファクトリー"<"LANDI(ランディ)">"社が、1960年代に作られていたものを当時の素材を含め復刻。ノスタルジックな雰囲気の中にモダンさをプラスしたのコートブランドです。
+            </div>
+            <div class="text_block">
+                ブランド名はイタリア語で“レインコート”を意味しており、ファブリックのすべてに撥水加工をかけることでレインコートとしての機能を加えています。</div>
+            <div class="text_block">
+                2022年よりワーク・ミリタリーテイストを強く取り入れた、新たなカジュアルカテゴリーが誕生。今までのl'impermeabileのシリーズにはない、ラギットな雰囲気を醸し出します。
+            </div>
+        </div>
+    </div>
+
+    <div class="brand_detail_img" >
+        <div class="img_blocks"  fxLayout="column" fxLayoutAlign="end end">
+            <div class="img_block"  fxFlexAlign='center' [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 700ms'}}">
+                <img width="100%" src="../../../assets/img/brands/RR/main_upper_img.png" alt="brand shirt">
+            </div>
+            
+            <div class="img_block" fxLayout="column" fxLayoutAlign="start end" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 900ms'}}">
+                <img width="100%" src="../../../assets/img/brands/RR/main_lower_img.png" alt="brand shurt">
+            </div>            
+        </div>
+    </div>
+
+    <div  class="img_foot" fxLayout="row" fxLayout.xs.mobile="column" fxLayoutAlign="center start" [ngSwitch]="(isMobileSize$|async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 1200ms'}}">
+        <img *ngSwitchCase="false" src="../../../assets/img/brands/RR/main_footer.png" alt="">
+        <img *ngSwitchCase="true" src="../../../assets/img/brands/RR/sp/main_footer.png" alt="">
+    </div>
+</div>
+    

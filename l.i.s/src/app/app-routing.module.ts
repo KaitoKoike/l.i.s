@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { NewsComponentComponent } from './news-component/news-component.component';
 import { TopPageComponent } from './top-page/top-page.component';
-import { NewsComponent } from './news/news.component';
 import { HelpComponent } from './help/help.component';
 import { NewsListComponent } from './news-list/news-list.component'
 import { AboutComponent } from './about/about.component';
@@ -20,12 +19,18 @@ import { News202307Component } from './news202307/news202307.component';
 import { News202308Component } from './news202308/news202308.component';
 import { News202309Component } from './news202309/news202309.component';
 import { News202310Component } from './news202310/news202310.component';
+import { News202311Component } from './news202311/news202311.component';
 import { AndreasComponent } from './brands/andreas/andreas.component';
 import { DamicoComponent } from './brands/damico/damico.component';
 import { DevoreComponent } from './brands/devore/devore.component';
 import { ErnestoComponent } from './brands/ernesto/ernesto.component';
 import { GFBComponent } from './brands/gfb/gfb.component';
 import { RuffoComponent } from './brands/ruffo/ruffo.component';
+import { StefanoComponent } from './brands/stefano/stefano.component';
+import { SMilanoComponent } from './brands/sozzimilano/smilano.component';
+import { RRComponent } from './brands/RR/rr.component';
+import { News202403Component } from './news202403/news202403.component';
+
 
 
 
@@ -34,7 +39,6 @@ const routes: Routes = [
   {path:'newslist',component:NewsListComponent},
   {path:'help',component:HelpComponent},
   {path:'about',component:AboutComponent},
-  {path:'newsExample',component:NewsComponent},
   {path:'news202209',component:News202209Component},
   {path:'news202210',component:News202210Component},
   {path:'news202211',component:News202211Component},
@@ -48,12 +52,17 @@ const routes: Routes = [
   {path:'news202308',component:News202308Component},
   {path:'news202309',component:News202309Component},
   {path:'news202310',component:News202310Component},
+  {path:"news202311",component:News202311Component},
+  {path:"news202403",component:News202403Component},
   {path:"brands/andreas",component:AndreasComponent},
   {path:"brands/damico",component:DamicoComponent},
   {path:"brands/devore",component:DevoreComponent},
   {path:"brands/ernesto",component:ErnestoComponent},
   {path:"brands/gfb",component:GFBComponent},
   {path:"brands/ruffo",component:RuffoComponent},
+  {path:"brands/stefano",component:StefanoComponent},
+  {path:"brands/sozzimilano",component:SMilanoComponent},
+  {path:"brands/rr",component:RRComponent},
   {path:'',redirectTo:'/TopPage',pathMatch:'full'}
 ];
 

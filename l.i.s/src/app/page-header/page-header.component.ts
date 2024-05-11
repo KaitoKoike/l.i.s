@@ -1,24 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { animation_list } from '../animations';
+import { Router, NavigationEnd } from '@angular/router';
+
 
 @Component({
-  selector: 'app-brand-components',
-  templateUrl: './brand-components.component.html',
-  styleUrls: ['./brand-components.component.css'],
-  animations:animation_list,
+  selector: 'app-page-header',
+  templateUrl: './page-header.component.html',
+  styleUrls: ['./page-header.component.css']
 })
-export class BrandComponentsComponent implements OnInit {
+export class PageHeaderComponent implements OnInit {
 
-  constructor() { }
+  headerImage?: string;
 
-  ngOnInit(): void {
-  }
-  slides = [
-    {img: "../assets/img/brand_list/drumohr_blue.svg",ref:"https://drumohr.lis-giappone.com/"},
-    {img: "../assets/img/brand_list/guy_rover.svg",ref:"https://guyrover.lis-giappone.com/"},
+  private imageRefs = [
     {img: "../assets/img/brand_list/gianfranco_bommezzadri_black.svg",ref:'',routerlink:'/brands/gfb'},
     {img: "../assets/img/brand_list/ernesto_black.svg",ref:'',routerlink:'/brands/ernesto'},
     {img: "../assets/img/brand_list/andreas.svg",ref:"",routerlink:'/brands/andreas'},
@@ -30,21 +23,32 @@ export class BrandComponentsComponent implements OnInit {
     {img: "../assets/img/brand_list/ciocca.svg",ref:"",routerlink:''},
     {img: "../assets/img/brand_list/sozzi_milano.svg",ref:"",routerlink:'/brands/sozzimilano'},
     {img: "../assets/img/brand_list/rr.svg",ref:"",routerlink:"/brands/rr"}
-
     //{img: "",ref:""},
-
   ];
-  slideConfig = {
-    //slickの設定
-    "slidesToShow": 3,
-    "slidesToScroll": 1,
-    "autoplay":false,
-    "dots":false,
-    'adaptiveHeight':false,
-    
-  };
 
-  _trackBy(slide:any) {
-    return slide.img;
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    // 初期化時に現在のURLに基づいて画像を設定
+    this.setHeaderImage(this.router.url);
+    console.log(this.router.url);
+
+    // ルート変更を購読
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.setHeaderImage(event.url);
+      }
+    });
   }
+  setHeaderImage(url: string) {
+    // URLに基づいてheaderImageを辞書から取得
+    const found = this.imageRefs.find(imageRef => imageRef.routerlink === url);
+    if (found) {
+      this.headerImage = found.img;
+    } else {
+      // URLが配列にない場合のデフォルト画像
+      this.headerImage = undefined;
+    }
+  }
+
 }

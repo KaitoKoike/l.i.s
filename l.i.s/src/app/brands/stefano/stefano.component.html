@@ -1,0 +1,35 @@
+<div class="top_page" fxLayout="column" fxLayoutAlign="start center">
+    <div fxShow="false" class="top_img"  [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}" fxLayoutAlign="center start">
+        <img class='key_img' src="../../../assets/img/brands/stefano/main_key_img.png" alt="brand shirt" >
+        <img class="scroll_arrow" src="../../../assets/img/brands/stefano/scroll_arrow.svg"  *ngIf="!(isMobileSize$ | async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}">
+    </div>
+    <div class="brand_detail_text" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 500ms'}}">
+        <div class="text_h1">
+            ネクタイ界の鬼才が手掛けたエレガンスで遊び心のあるシルクネクタイ
+        </div>
+        
+        <div class="text_blocks" 
+            fxLayout="column" 
+            fxLayoutAlign="start end"
+            fxLayout.xs.mobile="row wrap" 
+            fxLayoutAlign.xs.mobile="end end" >
+            <div class="text_block">
+                遡ること15 年前、Stefano Cauは 自分自身の名前のブランドを開発することを決意。強い情熱と献身を持ち、ネクタイとメンズアクセサリーからスタートしました。
+            </div>
+            <div class="text_block">
+                ブランドの中心となる要素は、デザインの品質と細部へのこだわり。それぞれのアイテムは 100% イタリア製で、豊富な経験を持つ職人よって作られています。
+            </div>
+            <div class="text_block">
+                Stefano Cauのアイテムは、ヨーロッパ、ロシア、シンガポール、日本、韓国の一流専門店で販売され、世界で最も重要なファッションの展示会であるフィレンツェのピッティ･ウォモにも出展。
+            </div>
+            <div class="text_block">
+                シーズンごとに何度も細かく調整されたエレガントで遊び心のあるデザインは、今もなお人々の心を掴んで離しません。
+            </div>
+        </div>
+    </div>
+    <div fxShow="false" class="img_foot" fxLayout="row" fxLayout.xs.mobile="column" fxLayoutAlign="center start" [ngSwitch]="(isMobileSize$|async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 1200ms'}}">
+        <img *ngSwitchCase="false" src="../../../assets/img/brands/stefano/main_footer.png" alt="">
+        <img *ngSwitchCase="true" src="../../../assets/img/brands/stefano/sp/main_footer.png" alt="">
+    </div>
+</div>
+    

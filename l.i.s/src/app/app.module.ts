@@ -21,7 +21,6 @@ import {ImageCarouselComponent} from './image-carousel/image-carousel.component'
 import { BrandComponentsComponent } from './brand-components/brand-components.component';
 import { NewsComponentComponent } from './news-component/news-component.component';
 import { ObserveElementDirective, TopPageComponent } from './top-page/top-page.component';
-import { NewsComponent } from './news/news.component';
 import { EmailValidator, EmailValitorMessage, HelpComponent, PostalCodeValidator, PostalCodeValitorMessage } from './help/help.component';
 import { NewsListComponent } from './news-list/news-list.component'
 import { AboutComponent } from './about/about.component'
@@ -42,12 +41,18 @@ import { News202307Component } from './news202307/news202307.component';
 import { News202308Component } from './news202308/news202308.component';
 import { News202309Component } from './news202309/news202309.component';
 import { News202310Component } from './news202310/news202310.component';
+import { News202311Component } from './news202311/news202311.component';
 import { AndreasComponent } from './brands/andreas/andreas.component';
 import { DamicoComponent } from './brands/damico/damico.component';
 import { DevoreComponent } from './brands/devore/devore.component';
 import { ErnestoComponent } from './brands/ernesto/ernesto.component';
 import { GFBComponent } from './brands/gfb/gfb.component';
 import { RuffoComponent } from './brands/ruffo/ruffo.component';
+import { StefanoComponent } from './brands/stefano/stefano.component';
+import { SMilanoComponent } from './brands/sozzimilano/smilano.component';
+import { RRComponent } from './brands/RR/rr.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
+import { News202403Component } from './news202403/news202403.component';
 
 
 
@@ -58,7 +63,6 @@ import { RuffoComponent } from './brands/ruffo/ruffo.component';
     BrandComponentsComponent,
     NewsComponentComponent,
     TopPageComponent,
-    NewsComponent,
     HelpComponent,
     NewsListComponent,
     AboutComponent,
@@ -78,12 +82,19 @@ import { RuffoComponent } from './brands/ruffo/ruffo.component';
     News202308Component,
     News202309Component,
     News202310Component,
+    News202311Component,
+    News202403Component,
     AndreasComponent,
     DamicoComponent,
     DevoreComponent,
     ErnestoComponent,
     GFBComponent,
-    RuffoComponent
+    RuffoComponent,
+    StefanoComponent,
+    SMilanoComponent,
+    RRComponent,
+    PageHeaderComponent,
+    News202403Component
   ],
   imports:[
     BrowserModule,
