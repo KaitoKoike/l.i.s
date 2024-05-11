@@ -1,0 +1,39 @@
+<div class="news_page_content" 
+    fxLayout="column"
+    fxLayoutAlign="start center">
+    <div class="Top_img" fxFlex="100">
+        <img src={{news_inf.img}} alt="top image">
+    </div>
+    <div class="news_sup_title">
+        {{news_inf.title}}
+    </div>
+
+    <div *ngFor="let news_content of this.news_list" class="news_list">
+        <div class="news_date">
+            <p>{{news_content.date}}</p>
+        </div>
+    
+        <div class="news_title">
+            <p>{{news_content.title}}</p>
+        </div>
+    
+        <div class="news_detail">
+            <p>
+                {{news_content.detail}}
+                <a *ngIf="news_content.url" href="{{news_content.url}}">こちら</a>
+            </p>
+        </div>
+        <hr>
+    </div>
+    
+</div>
+
+<div class="news_page_controller" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="40px">
+    <a routerLink={{news_inf.next}}><div class="next_news">← Next</div> </a>
+    <a routerLink={{news_inf.before}} ><div class="prev_news">Prev →</div></a>
+</div>
+
+    <div class="news_back" fxLayoutAlign="center">
+        <a routerLink="/newslist"><p>Back</p> </a>
+    </div>
+

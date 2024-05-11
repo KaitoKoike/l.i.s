@@ -1,0 +1,54 @@
+<div class="top_page" fxLayout="column" fxLayoutAlign="start center">
+    <div class="top_img"  [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}" fxLayoutAlign="center start">
+        <img class='key_img' src="../../assets/img/main_key_img.png" alt="brand shirt" >
+        <img class="scroll_arrow" src="../../assets/scroll_arrow.svg"  *ngIf="!(isMobileSize$ | async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}">
+    </div>
+    <div class="brand_detail_text" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 500ms'}}">
+        <div class="text_h1">
+            本格的サルトリアの老舗ブランド
+        </div>
+        
+        <div class="text_blocks" 
+            fxLayout="column" 
+            fxLayoutAlign="start end"
+            fxLayout.xs.mobile="row wrap" 
+            fxLayoutAlign.xs.mobile="end end" >
+            <div class="text_block">
+                GIANFRANCO BOMMEZZADRI（ジャンフランコボメザトリ）は、<br>
+                1950年にイタリア・パルマで創業した、<br>
+                質実剛健なスーツをつくる本格的サルトリアのブランド。<br>
+                スーツのクオリティの高さから、ビッグメゾンのスーツおよびジャケットなどの製作も行う老舗ファクトリーです。
+            </div>
+            
+            <div class="text_block">
+                ジャンフランコボメザトリの仕立ては、<br>
+                芯地をキャンバス等の天然素材を用い、<br>
+                手作業の工程に多くの時間と技術をかけて製作しています。<br>
+                そのため、見た目の美しさもさることながら、体に吸い付くような極上の着心地を生み出しています。
+            </div>
+            
+            <div class="text_block">
+                またイギリスのヴィンテージ風素材を中心に生地を選んでおり、<br>
+                ビジネスをメインとしたスーツではなく、<br>
+                その時代のトレンド感を組み込んだスーツを楽しまれる方におすすめのブランドです。
+            </div>
+
+        </div>
+    </div>
+    <div class="brand_detail_img" >
+        <div class="img_blocks"  fxLayout="column" fxLayoutAlign="end end">
+            <div class="img_block"  fxFlexAlign='center' [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 700ms'}}">
+                <img width="100%" src="../../assets/img/main_upper_img.png" alt="brand shirt">
+            </div>
+            
+            <div class="img_block" fxLayout="column" fxLayoutAlign="start end" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 900ms'}}">
+                <img width="100%" src="../../assets/img/main_lower_img.png" alt="brand shurt">
+            </div>            
+        </div>
+    </div>   
+    <div class="img_foot" fxLayout="row" fxLayout.xs.mobile="column" fxLayoutAlign="center start" [ngSwitch]="(isMobileSize$|async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 1200ms'}}">
+        <img *ngSwitchCase="false" src="../../assets/img/main_footer.png" alt="">
+        <img *ngSwitchCase="true" src="../../assets/img/sp/main_footer.png" alt="">
+    </div>
+</div>
+    

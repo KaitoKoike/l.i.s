@@ -34,6 +34,21 @@ import { News202210Component } from './news202210/news202210.component';
 import { News202211Component } from './news202211/news202211.component';
 import { News202212Component } from './news202212/news202212.component';
 import { News202301Component } from './news202301/news202301.component';
+import { News202303Component } from './news202303/news202303.component';
+import { News202304Component } from './news202304/news202304.component';
+import { News202305Component } from './news202305/news202305.component';
+import { News202306Component } from './news202306/news202306.component';
+import { News202307Component } from './news202307/news202307.component';
+import { News202308Component } from './news202308/news202308.component';
+import { News202309Component } from './news202309/news202309.component';
+import { News202310Component } from './news202310/news202310.component';
+import { AndreasComponent } from './brands/andreas/andreas.component';
+import { DamicoComponent } from './brands/damico/damico.component';
+import { DevoreComponent } from './brands/devore/devore.component';
+import { ErnestoComponent } from './brands/ernesto/ernesto.component';
+import { GFBComponent } from './brands/gfb/gfb.component';
+import { RuffoComponent } from './brands/ruffo/ruffo.component';
+
 
 
 @NgModule({
@@ -55,6 +70,20 @@ import { News202301Component } from './news202301/news202301.component';
     News202211Component,
     News202212Component,
     News202301Component,
+    News202303Component,
+    News202304Component,
+    News202305Component,
+    News202306Component,
+    News202307Component,
+    News202308Component,
+    News202309Component,
+    News202310Component,
+    AndreasComponent,
+    DamicoComponent,
+    DevoreComponent,
+    ErnestoComponent,
+    GFBComponent,
+    RuffoComponent
   ],
   imports:[
     BrowserModule,

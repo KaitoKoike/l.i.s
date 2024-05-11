@@ -5,13 +5,13 @@
     <div
         class="brand_list" 
         fxLayoutAlign="start start"
-        fxLayoutAlign.xs.mobile = 'space-between start'
-        fxLayoutGap="4%"
-        fxLayout="row"
+        fxLayoutAlign.xs.mobile = 'space-between center'
+        fxLayout="row wrap"
         box-sizing="border-box"
     >
-        <div *ngFor="let slide of slides;" class="brand_item">
-            <a href="{{slide.ref}}"><img src="{{ slide.img }}" alt="" class="brand_logo"></a>
+        <div *ngFor="let slide of slides;" class="brand_item" fxFlex="33" >
+            <a *ngIf="slide.routerlink" routerLink="{{slide.routerlink}}"><img src="{{slide.img}}" alt="" class="brand_logo"></a>
+            <a *ngIf="slide.ref" href="{{slide.ref}}"><img src="{{ slide.img }}" alt="" class="brand_logo"></a>
         </div>
     </div>
 </div>

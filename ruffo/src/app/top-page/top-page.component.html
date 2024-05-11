@@ -1,0 +1,64 @@
+<div class="top_page" fxLayout="column" fxLayoutAlign="start center">
+    <div class="top_img"  [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}" fxLayoutAlign="center start">
+        <img class='key_img' src="../../assets/img/main_key_img.png" alt="brand shirt" >
+        <img class="scroll_arrow" src="../../assets/scroll_arrow.svg"  *ngIf="!(isMobileSize$ | async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}">
+    </div>
+    <div class="brand_detail_text" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 500ms'}}">
+        <div class="text_h1">
+            職人のこだわりとプライドを感じさせるプロダクション
+        </div>
+        
+        <div class="text_blocks" 
+            fxLayout="column" 
+            fxLayoutAlign="start end"
+            fxLayout.xs.mobile="row wrap" 
+            fxLayoutAlign.xs.mobile="end end" >
+            <div class="text_block">
+                RUFFOの ブランドルーツは、 1966 年以来、先祖代々受け継がれたトラディショナルなレザーウェアの製造がベースになっており、<br>
+                素材選びから縫製に至るまで、職人のクラフトマンシップと確かな経験が、上質なMade in Italy を保証をしています。
+            </div>
+            
+            <div class="text_block">
+                常に進化するライフスタイルのニーズを取り入れたコレクションを目指しており、<br>
+                選び抜かれた上質な素材と、職人のプライドとこだわりを感じる加工技術を組み合わせることで、<br>
+                コンテンポラリーなプロダクションを探している人へ新しい提案を続けています。
+            </div>
+        </div>
+    </div>
+    <div class="brand_detail_img" >
+        <div class="img_blocks"  fxLayout="column" fxLayoutAlign="end end">
+            <div class="img_block"  fxFlexAlign='center' [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 700ms'}}">
+                <img width="100%" src="../../assets/img/main_upper_img.png" alt="brand shirt">
+            </div>
+            
+            <div class="img_block" fxLayout="column" fxLayoutAlign="start end" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 900ms'}}">
+                <img width="100%" src="../../assets/img/main_lower_img.png" alt="brand shurt">
+            </div>            
+        </div>
+    </div>   
+    <div class="brand_detail_text" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 500ms'}}">
+        <div class="text_h1">
+            レザーウェアのマーケットを牽引するRUFFO。
+        </div>
+        
+        <div class="text_blocks" 
+            fxLayout="column" 
+            fxLayoutAlign="start end"
+            fxLayout.xs.mobile="row wrap" 
+            fxLayoutAlign.xs.mobile="end end" >
+            <div class="text_block">
+                デザインオフィス 兼工場 である、C.G STUDIO SRL は、Marisa と Ruffo Corsi によって 60 年代に設立。<br>
+                彼らのリーダーシップとマネジメントの下で、同社はファッションとレザーウェアのマーケットリーダーとして業界を牽引してきました。<br>
+            </div>
+            
+            <div class="text_block">
+                RUFFOは歴史的価値を持ちながら、デザインオフィスと素材開発チームが緊密に連携し、パターン、サンプリング部門、倉庫、 ロジスティクスまで、すべて自社で運営。<br>
+            </div>
+        </div>
+    </div>
+    <div class="img_foot" fxLayout="row" fxLayout.xs.mobile="column" fxLayoutAlign="center start" [ngSwitch]="(isMobileSize$|async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 1200ms'}}">
+        <img *ngSwitchCase="false" src="../../assets/img/main_footer.png" alt="">
+        <img *ngSwitchCase="true" src="../../assets/img/sp/main_footer.png" alt="">
+    </div>
+</div>
+    

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { animation_list } from './animation';
+import { animation_list } from './animations';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

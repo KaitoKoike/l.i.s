@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { animationFrames } from 'rxjs';
-import { animation_list } from '../animation';
+import { animation_list } from '../animations';
 
 @Component({
   selector: 'app-image-carousel',

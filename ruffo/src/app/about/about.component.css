@@ -1,0 +1,115 @@
+.about_company {
+    max-width: 1000px;
+    width: auto;
+    margin: 0 24px;
+    font-family: 'YuMincho';
+}
+
+.info_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 200%;
+    /* identical to box height, or 72px */
+
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.03em;
+    margin-bottom: 100px;
+
+}
+p {
+    margin: 0 ;
+}
+
+.companyInfo {
+    margin-bottom: 309px;
+}
+
+.companyInfo a {
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* ボックスの高さと同一、または21px */
+
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+
+    /* color-primary */
+
+    color: #231815;
+}
+
+dt p {
+    width: 119px;
+}
+
+
+dt,dd {
+    margin: 0 0 24px 0;
+    padding: 0 0 0 0;
+    /* JP/Reg/14px */
+    font-family: 'YuMincho';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    /* color-primary */
+    color: #231815;
+}
+
+@media (max-width:768px) {
+    .companyInfo{
+        margin-bottom: 64px;
+        /* JP/Reg/14px */
+        font-family: 'YuMincho';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        /* or 21px */
+
+        letter-spacing: 0.03em;
+
+        /* color-primary */
+
+        color: #231815;
+    }
+    p {
+        margin: 0;
+    }
+    dt{
+        margin-bottom: 16px;
+    }
+    dd{
+        margin-bottom: 40px;
+    }
+    dd p{
+        height: auto;
+    }
+    .info_title{
+        margin-bottom: 48px;
+        /* JP/Reg/32px */
+        font-family: 'YuMincho';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 150%;
+        /* identical to box height, or 48px */
+
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        letter-spacing: 0.03em;
+
+        /* color-primary */
+
+        color: #231815;
+
+    }
+    
+}

@@ -1,0 +1,55 @@
+<div class="top_page" fxLayout="column" fxLayoutAlign="start center">
+    <div class="top_img"  [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}" fxLayoutAlign="center start">
+        <img class='key_img' src="../../../assets/img/brands/andreas/main_key_img.png" alt="brand shirt" >
+        <img class="scroll_arrow" src="../../../assets/img/brands/andreas/scroll_arrow.svg"  *ngIf="!(isMobileSize$ | async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}">
+    </div>
+    <div class="brand_detail_text" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 500ms'}}">
+        <div class="text_h1">
+            ハンドメイドの芸術コレクション
+        </div>
+        
+        <div class="text_blocks" 
+            fxLayout="column" 
+            fxLayoutAlign="start end"
+            fxLayout.xs.mobile="row wrap" 
+            fxLayoutAlign.xs.mobile="end end" >
+            <div class="text_block">
+                andrea's1947（アンドレアズ）は、1947年イタリア・フィレンツェ近郊のプラトーにて創業した、<br>
+                ストールやスカーフ、ショールを専門に生産するファクトリー。
+            </div>
+            
+            <div class="text_block">
+                イタリア国内ですべての生産を行いたいという想いと共に生まれました。<br>
+                現在も伝統的なシャトル織機を使用し、イタリア国内で製造から品質管理まで一貫して行っています。
+            </div>
+            
+            <div class="text_block">
+                熟練した職人によるアンティーク織機によって織られたカシミアやシルク、リネンなどの上質な素材に、<br>
+                自然から受けたインスピレーションをプリントで表現した色鮮やかな作品が特徴的です。
+            </div>
+
+            <div class="text_block">
+                大量生産に向かない伝統的な製法のため、限られた数の生産量となっており、
+                まさしくハンドメイドの芸術品といえます。
+                まるで繊維で作られたアクセサリーと称されるコレクションは、
+                イタリア国内をはじめ、世界で高い評価を得ています。
+            </div>
+        </div>
+    </div>
+    <div class="brand_detail_img" >
+        <div class="img_blocks"  fxLayout="column" fxLayoutAlign="end end">
+            <div class="img_block"  fxFlexAlign='center' [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 700ms'}}">
+                <img width="100%" src="../../../assets/img/brands/andreas/main_upper_img.png" alt="brand shirt">
+            </div>
+            
+            <div class="img_block" fxLayout="column" fxLayoutAlign="start end" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 900ms'}}">
+                <img width="100%" src="../../../assets/img/brands/andreas/main_lower_img.png" alt="brand shurt">
+            </div>            
+        </div>
+    </div>   
+    <div class="img_foot" fxLayout="row" fxLayout.xs.mobile="column" fxLayoutAlign="center start" [ngSwitch]="(isMobileSize$|async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 1200ms'}}">
+        <img *ngSwitchCase="false" src="../../../assets/img/brands/andreas/main_footer.png" alt="">
+        <img *ngSwitchCase="true" src="../../../assets/img/brands/andreas/sp/main_footer.png" alt="">
+    </div>
+</div>
+    

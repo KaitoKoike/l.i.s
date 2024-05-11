@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, Directive, ElementRef, OnDestroy, OnInit, ViewChild,Input, Output, EventEmitter } from '@angular/core';
-import { animation_list, fadeinAnimation } from '../animation';
+import { animation_list, fadeinAnimation } from '../animations';
 import { debounceTime, Observable, Subscriber, Subscription } from 'rxjs'
 import { transition, trigger, useAnimation } from '@angular/animations';
 

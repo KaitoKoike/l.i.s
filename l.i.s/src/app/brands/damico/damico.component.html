@@ -1,0 +1,53 @@
+<div class="top_page" fxLayout="column" fxLayoutAlign="start center">
+    <div class="top_img"  [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}" fxLayoutAlign="center start">
+        <img class='key_img' src="../../../assets/img/brands/damico/main_key_img.png" alt="brand shirt" >
+        <img class="scroll_arrow" src="../../../assets/img/brands/damico/scroll_arrow.svg"  *ngIf="!(isMobileSize$ | async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}">
+    </div>
+    <div class="brand_detail_text" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 500ms'}}">
+        <div class="text_h1">
+            熟練した職人の手作業に裏打ちされた確かなモノづくり
+        </div>
+        
+        <div class="text_blocks" 
+            fxLayout="column" 
+            fxLayoutAlign="start end"
+            fxLayout.xs.mobile="row wrap" 
+            fxLayoutAlign.xs.mobile="end end" >
+            <div class="text_block">
+                Andrea DAMICOは1964年ボローニャ生まれ。<br>
+                戦後より靴屋を営んでいた靴職人の祖父、父の影響を受け、レザーに対して情熱を持つように。<br>
+                27歳の時に、職人との協力でオリジナルベルトのデザイン及び作成に着手し、1991年にAndrea DAMICO社を設立。<br>
+                1993年からは財布・ビジネスバッグ・トラベルバッグなども手掛け、1997年にはファクトリーを設立しました。
+            </div>
+            
+            <div class="text_block">
+                生産性を高めると同時に本格的な海外進出もスタート。<br>
+                当時、ベルトと言えば黒か茶のクラシックなカーフベルトしか存在しなかった時代。<br>
+                そんな中でAndrea DAMICOは、カラフルでエキゾチックレザーを使ったユニークなベルトを発表し、イタリア中のブティックから熱狂的に迎えられました。
+            </div>
+            
+            <div class="text_block">
+                その後はパッチワーク、製品洗い、スタッズ、ハンドペイントなど様々な技法を取り入れ、<br>
+                メンズベルト界に新たな手法を多く持ち込みました。<br>
+                現在は、ウォレットチェーンやブレスレットのコレクションも展開し、<br>
+                メンズアクセサリーブランドとしてのイメージも確立させています。
+            </div>
+        </div>
+    </div>
+    <div class="brand_detail_img" >
+        <div class="img_blocks"  fxLayout="column" fxLayoutAlign="end end">
+            <div class="img_block"  fxFlexAlign='center' [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 700ms'}}">
+                <img width="100%" src="../../../assets/img/brands/damico/main_upper_img.png" alt="brand shirt">
+            </div>
+            
+            <div class="img_block" fxLayout="column" fxLayoutAlign="start end" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 900ms'}}">
+                <img width="100%" src="../../../assets/img/brands/damico/main_lower_img.png" alt="brand shurt">
+            </div>            
+        </div>
+    </div>   
+    <div class="img_foot" fxLayout="row" fxLayout.xs.mobile="column" fxLayoutAlign="center start" [ngSwitch]="(isMobileSize$|async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 1200ms'}}">
+        <img *ngSwitchCase="false" src="../../../assets/img/brands/damico/main_footer.png" alt="">
+        <img *ngSwitchCase="true" src="../../../assets/img/brands/damico/sp/main_footer.png" alt="">
+    </div>
+</div>
+    

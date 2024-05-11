@@ -1,0 +1,60 @@
+<div class="top_page" fxLayout="column" fxLayoutAlign="start center">
+    <div class="top_img"  [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}" fxLayoutAlign="center start">
+        <img class='key_img' src="../../../assets/img/brands/devore/main_key_img.png" alt="brand shirt" >
+        <img class="scroll_arrow" src="../../../assets/img/brands/devore/scroll_arrow.svg"  *ngIf="!(isMobileSize$ | async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 300ms'}}">
+    </div>
+    <div class="brand_detail_text" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 500ms'}}">
+        <div class="text_h1">
+            伝統に基づいた確かなモノ作りと革新的なデザイン、素材使いの融合	
+        </div>
+        
+        <div class="text_blocks" 
+            fxLayout="column" 
+            fxLayoutAlign="start end"
+            fxLayout.xs.mobile="row wrap" 
+            fxLayoutAlign.xs.mobile="end end" >
+            <div class="text_block">
+                イタリア・ナポリのパンツブランドDEVORE Incipit（デヴォレ・インチピット）は、<br>
+                著名デザイナーのMarco Re（マルコ・レ）と、ナポリの老舗パンツメーカーでDefra（デフラ）社が立ち上げたブランド。<br>
+                マルコ・レがモデル・生地の企画を行い、デフラ社が生産を手掛け、<br>
+                2017年春夏のコレクションからスタートさせました。
+            </div>
+            
+            <div class="text_block">
+                マルコ・レは、生地の企画・開発に優れ、特にコットン地には定評があり、<br>
+                生地メーカーとのパイプを生かしながらオリジナルの生地を作り出します。<br>
+                デヴィレ・インチピットのコレクションの半分以上に、オリジナルの生地、もしくは開発した生地を採用。<br>
+                コットン地に精通し、洗いのかけ方もこだわり、<br>
+                2022年春夏コレクションからは、オゾンウォッシュという新しい技術も取り入れました。
+            </div>
+            
+            <div class="text_block">
+                ナポリのモノ作りとコストのバランスを兼ね備えたデフラ社と組むことにより、<br>
+                マルコ・レの企画した生地を、製品として適正価格で市場へ提案できることを可能にし、<br>
+                高いコストパフォーマンスも魅力のブランドです。
+            </div>
+
+            <div>
+                遊び抜いた最高の素材を用い、デフラ社のテーラーメイドの技術と組み合わせ、<br>
+                新たな時代に常に新鮮さを感じさせる新しいスタイルを提案することで、<br>
+                身に付ける人に、他の人とは異なる個性と満足感を与えます。
+            </div>
+        </div>
+    </div>
+    <div class="brand_detail_img" >
+        <div class="img_blocks"  fxLayout="column" fxLayoutAlign="end end">
+            <div class="img_block"  fxFlexAlign='center' [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 700ms'}}">
+                <img width="100%" src="../../../assets/img/brands/devore/main_upper_img.png" alt="brand shirt">
+            </div>
+            
+            <div class="img_block" fxLayout="column" fxLayoutAlign="start end" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 900ms'}}">
+                <img width="100%" src="../../../assets/img/brands/devore/main_lower_img.png" alt="brand shurt">
+            </div>            
+        </div>
+    </div>   
+    <div class="img_foot" fxLayout="row" fxLayout.xs.mobile="column" fxLayoutAlign="center start" [ngSwitch]="(isMobileSize$|async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 1200ms'}}">
+        <img *ngSwitchCase="false" src="../../../assets/img/brands/devore/main_footer.png" alt="">
+        <img *ngSwitchCase="true" src="../../../assets/img/brands/devore/sp/main_footer.png" alt="">
+    </div>
+</div>
+    
