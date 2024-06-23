@@ -20,6 +20,9 @@ export class ImageCarouselComponent implements OnInit{
   slides = [
     {img: "../assets/img/lis_top/image_carousel/drumohr_main_key_img.svg",link:'https://drumohr.lis-giappone.com/'},
     {img: "../assets/img/lis_top/image_carousel/guyrover_main_key_img.svg",link:'https://guyrover.lis-giappone.com/'},
+    {img: "../assets/img/lis_top/image_carousel/ernest_main_key_img.svg",link:'https://lis-giappone.com/#/brands/ernesto'},
+    {img: "../assets/img/lis_top/image_carousel/gfb_main_key_img.svg",link:'https://lis-giappone.com/#/brands/gfb'},
+    {img: "../assets/img/lis_top/image_carousel/devore_main_key_img.svg",link:'https://lis-giappone.com/#/brands/devore'},
   ];
   slideConfig = {
     //slickの設定

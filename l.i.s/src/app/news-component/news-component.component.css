@@ -67,7 +67,7 @@
 .news_link {
     margin: 0 auto;
     max-width: 1000px;
-    padding-bottom: 200px;
+    margin-bottom: 80px;
 }
 
 .news_detail_navigation{
@@ -97,7 +97,7 @@
 
 @media (max-width :768px){
     .title {
-    margin-bottom: 48px;
+    margin-bottom: 0px;
         /* EN/Reg/16px */
     font-family: 'Cormorant Garamond-Regular';
     font-style: normal;
@@ -116,7 +116,7 @@
     color: #231815;
     }
     .news_link{
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
     .news_description {
         margin-left: 16px;
@@ -166,7 +166,8 @@
      }
     .news_detail_navigation {
         width: 100%;
-        margin-bottom: 64px;
+        margin-top: 16px;
+        margin-bottom: 32px;
     }
     .news_detail_link {
         text-decoration: none;

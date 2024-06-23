@@ -14,7 +14,12 @@
           fxLayout="row"
           fxLayoutAlign="space-between center"
       >
-      <div fxFlex="33" class="navigate_toggle" ><img *ngIf="isMobileSize$ | async" src="../assets/img/logo/toggle.png" (click)="sidenav.toggle()" ></div>
+      <div fxFlex="33" class="navigate_toggle" >
+        <a href="https://lis-giappone.com/#/TopPage" *ngIf="!(isMobileSize$ | async)">
+          <img src="../assets/img/logo/l.i.s.svg">
+        </a>
+        <img *ngIf="isMobileSize$ | async" src="../assets/img/logo/toggle.png" (click)="sidenav.toggle()" >
+      </div>
       <div class="drumohr_logo" fxLayoutAlign="center center" [ngSwitch]="(isMobileSize$|async)" fxFlex="34">
         <a routerLink="/TopPage">
           <img *ngSwitchCase="false" src="../assets/img/logo/drumohr_pc_logo.svg">
@@ -29,8 +34,9 @@
   <mat-sidenav-container [hasBackdrop]="true">
     <!-- sidenav part start -->
     <mat-sidenav mode="over" hidden #sidenav fxLayout="column" fxLayoutAlign="center">
-      <div class="shop_navigation mincho" fxLayoutAlign="center start" style="margin: 80px 0 20px 0 ;" (click)="elementItemClick()"><a routerLink="/ShopPage"  style="text-align: center;">取扱店舗</a></div>
-      <div class="ecPage_navigation garamond_wide" fxLayoutAlign="center start" (click)="elementItemClick()"><a href="https://drumohr.base.shop/" target="_blank" style="text-align: center;">ONLINE STORE</a></div>
+      <div class="shop_navigation mincho" fxLayoutAlign="center start" style="margin: 20px 0 20px 0 ;" (click)="elementItemClick()"><a href="https://lis-giapponse.com/#/TopPage" style="text-align: center; font-size: 15pt;">l.i.s</a></div>
+      <div class="shop_navigation mincho" fxLayoutAlign="center start" style="margin: 20px 0 20px 0 ;" (click)="elementItemClick()"><a routerLink="/ShopPage"  style="text-align: center;">取扱店舗</a></div>
+      <div class="ecPage_navigation garamond_wide" fxLayoutAlign="center start" style="margin: 20px 0 20px 0 ;" (click)="elementItemClick()"><a href="https://drumohr.base.shop/" target="_blank" style="text-align: center;">ONLINE STORE</a></div>
     </mat-sidenav>
     
     <!-- header part end -->

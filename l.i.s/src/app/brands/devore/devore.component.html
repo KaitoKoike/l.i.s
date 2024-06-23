@@ -52,7 +52,7 @@
             </div>            
         </div>
     </div>   
-    <div class="img_foot" fxLayout="row" fxLayout.xs.mobile="column" fxLayoutAlign="center start" [ngSwitch]="(isMobileSize$|async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 1200ms'}}">
+    <div class="img_foot" style="display: none;" fxLayout="row" fxLayout.xs.mobile="column" fxLayoutAlign="center start" [ngSwitch]="(isMobileSize$|async)" [@fadeinAnimation]="{value:'hoge',params:{time:'2000ms 1200ms'}}">
         <img *ngSwitchCase="false" src="../../../assets/img/brands/devore/main_footer.png" alt="">
         <img *ngSwitchCase="true" src="../../../assets/img/brands/devore/sp/main_footer.png" alt="">
     </div>

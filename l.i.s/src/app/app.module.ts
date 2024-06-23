@@ -53,6 +53,7 @@ import { SMilanoComponent } from './brands/sozzimilano/smilano.component';
 import { RRComponent } from './brands/RR/rr.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { News202403Component } from './news202403/news202403.component';
+import { BannerComponent } from './banner/banner.component';
 
 
 
@@ -94,7 +95,8 @@ import { News202403Component } from './news202403/news202403.component';
     SMilanoComponent,
     RRComponent,
     PageHeaderComponent,
-    News202403Component
+    News202403Component,
+    BannerComponent
   ],
   imports:[
     BrowserModule,
