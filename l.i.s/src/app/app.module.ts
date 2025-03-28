@@ -54,6 +54,8 @@ import { RRComponent } from './brands/RR/rr.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { News202403Component } from './news202403/news202403.component';
 import { BannerComponent } from './banner/banner.component';
+import { News202503Component } from './news20250301/news202503.component';
+import { News20250302Component } from './news20250302/news20250302.component';
 
 
 
@@ -85,6 +87,8 @@ import { BannerComponent } from './banner/banner.component';
     News202310Component,
     News202311Component,
     News202403Component,
+    News202503Component,
+    News20250302Component,
     AndreasComponent,
     DamicoComponent,
     DevoreComponent,
@@ -95,7 +99,6 @@ import { BannerComponent } from './banner/banner.component';
     SMilanoComponent,
     RRComponent,
     PageHeaderComponent,
-    News202403Component,
     BannerComponent
   ],
   imports:[
