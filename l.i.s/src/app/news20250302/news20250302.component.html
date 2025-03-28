@@ -1,0 +1,81 @@
+<div class="news_page_content" 
+    fxLayout="column"
+    fxLayoutAlign="start center">
+    <div class="Top_img" fxFlex="100">
+        <img src={{news_inf.img}} alt="top image">
+    </div>
+    <div class="news_sup_title">
+        {{news_inf.title}}
+    </div>
+
+    <div *ngFor="let news_content of this.news_list" class="news_list">
+        <div class="news_date">
+            <p>{{news_content.date}}</p>
+        </div>
+
+    
+        <div class="news_detail">
+            ドルモア 2025春夏新作コレクション入荷のお知らせ
+
+            ドルモアオンラインショップでは2025春夏の新作コレクションが入荷いたしました。
+
+            今の季節に気持ちよく合わせられるミドルゲージ・ハイゲージのニットが揃っております。
+
+             衣替えをご検討いただいている方はぜひとも 【ドルモア オンラインショップ】にて商品をお探しください。
+
+            またオンラインショップにて展開している商品以外にも以下の店舗ではドルモアの2025年春夏の商品を多く取り扱いしております。
+            ご興味がございます方は以下の各店までお問い合わせください。
+
+            皆様のご来店お待ち申し上げております。
+            ※店舗によっては展開していない商品があることをご了承ください。
+
+            ●阪急メンズ大阪 ドルモア
+            〒530-0017
+            大阪府大阪市北区角田町7番10号　阪急メンズ大阪4F
+            サードスタイル　ドルモア
+            電話06-6361-1381
+            ※営業時間については、店舗にお問い合わせください。
+
+            ●伊勢丹メンズ館　ドルモア
+            東京都新宿区新宿3丁目14-1 伊勢丹メンズ館5F
+            ドルモア
+            電話　03-3352-1111
+            ※営業時間については、店舗にお問い合わせください。
+
+            <p class="news_detail">Drumohr の2024年春夏の新作コレクションを数多く集めましたPOP UPイベントを来週3/20(水)より阪急メンズ東京にてスタートいたします。</p>
+            <p class="news_detail">
+                ドルモアの特徴は、徹底的にこだわったそのディテールと素材にあります。<br>
+                Drumohrが考案したシームレスニット（無縫製ニット）は、一着まるごとの状態で、編み機から直接、立体的に編成されます。  <br>
+                そのため、ニット本来の手触りと軽さを引き立て、ドレープ性を高めるなど、まさに“理想のニットウェア”です。<br>
+                また、ブランドのアイコンパターンとして知られるビスケット柄ニットは、今も世界中から愛され続けています。<br>
+            </p>
+            
+            <p class="news_detail">
+                200年を超える歴史をもつニットブランドDrumohrの世界観を是非この機会にご覧ください。<br>
+            </p>
+            
+            <p class="news_detail">
+                Drumohr 2024SS POP-UP EVENT <br>
+                【阪急メンズ東京 4F サードスタイル】<br>
+                ■期間：3月20日(水) ～ 4/2(火)<br>
+                ■阪急メンズ東京 4F　サードスタイル<br>
+                ■03-6252-5438(売場直通)<br>
+            </p>
+            <p class="news_detail">
+            Drumohr POP-UP EVENT｜WHAT'S NEW｜HANKYU MEN'S / 阪急メンズ (<a href="https://web.hh-online.jp/hankyu-mens/?area=estorestop_navi">https://web.hh-online.jp/</a>)<br>
+            </p>
+        </div>
+        <hr>
+    </div>
+    
+</div>
+
+<div class="news_page_controller" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="40px">
+    <a routerLink={{news_inf.next}}><div class="next_news">← Next</div> </a>
+    <a routerLink={{news_inf.before}} ><div class="prev_news">Prev →</div></a>
+</div>
+
+    <div class="news_back" fxLayoutAlign="center">
+        <a routerLink="/newslist"><p>Back</p> </a>
+    </div>
+

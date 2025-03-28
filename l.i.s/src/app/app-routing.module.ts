@@ -30,6 +30,8 @@ import { StefanoComponent } from './brands/stefano/stefano.component';
 import { SMilanoComponent } from './brands/sozzimilano/smilano.component';
 import { RRComponent } from './brands/RR/rr.component';
 import { News202403Component } from './news202403/news202403.component';
+import { News20250302Component } from './news20250302/news20250302.component';
+import { News202503Component } from './news20250301/news202503.component';
 
 
 
@@ -54,6 +56,8 @@ const routes: Routes = [
   {path:'news202310',component:News202310Component},
   {path:"news202311",component:News202311Component},
   {path:"news202403",component:News202403Component},
+  {path:"news20250301",component:News202503Component},
+  {path:"news20250302",component:News20250302Component},
   {path:"brands/andreas",component:AndreasComponent},
   {path:"brands/damico",component:DamicoComponent},
   {path:"brands/devore",component:DevoreComponent},
